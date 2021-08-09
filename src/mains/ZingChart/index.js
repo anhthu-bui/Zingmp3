@@ -4,7 +4,11 @@ import "./style.scss";
 function ZingChart(props) {
   let style = {};
   if (props) {
-    style = { backgroundColor: props.backgroundColor };
+    style = {
+      backgroundColor: props.backgroundColor,
+      minHeight: props.height,
+      maxHeight: props.height,
+    };
   }
   return (
     <div className="zing-chart" style={style}>

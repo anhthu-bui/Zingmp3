@@ -7,7 +7,11 @@ function AlbumVideoHot(props) {
   let style = {};
   if (props) {
     // eslint-disable-next-line react/prop-types
-    style = { backgroundColor: props.backgroundColor };
+    style = {
+      backgroundColor: props.backgroundColor,
+      minHeight: props.height,
+      maxHeight: props.height,
+    };
   }
   return (
     // eslint-disable-next-line react/jsx-no-comment-textnodes

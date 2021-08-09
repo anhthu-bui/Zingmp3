@@ -1,21 +1,21 @@
+.container {
+    background-color: 
+    #EEEEEE;
+}
 .header-layout {
     padding: 0px;
 }
 
-.body-layout {
-    padding-left: 100px;
-    padding-right: 100px;
-    height: 100%;
-    line-height: 100px;
-}
-
-.sidebar-layout {
-    background-color: white;
-    max-width: 400px !important;
-    min-width: 400px !important;
-}
-
 .footer-layout {
     padding: 0px;
-    margin-top: 10px;
+}
+
+.content-layout {
+    background-color: white;
+    padding: 20px;
+}
+
+.song-ranking {
+    margin-top: 20px;
+    padding-right: 10px;
 }
