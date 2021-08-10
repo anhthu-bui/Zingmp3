@@ -1,4 +1,4 @@
-// libs
+// components
 import Mains from "./mains";
 // others
 import "./App.css";
