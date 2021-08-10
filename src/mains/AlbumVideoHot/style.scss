@@ -1,9 +1,23 @@
-.album-video-hot {
-    margin-bottom: 40px;
-    background-color: green;
-    color: white;
+.playlist {
+    grid-column: 1 / 3;
+    grid-row:  5 / 6;
     font-size: 20px;
     text-align: center;
-    max-height: 300px;
-    line-height: 300px;
+    color: white;
+}
+
+.video-hot {
+    grid-column: 1 / 3;
+    grid-row:  7 / 8;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.album-hot {
+    grid-column: 1 / 3;
+    grid-row:  9 / 11;
+    font-size: 20px;
+    text-align: center;
+    color: white;
 }

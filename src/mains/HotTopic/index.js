@@ -1,3 +1,4 @@
+// others
 import "./style.scss";
 
 function HotTopic() {

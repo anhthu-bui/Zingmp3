@@ -1,9 +1,10 @@
 .partner {
+    grid-column: 1 / 4;
+    grid-row: 16 / 17;
+    margin-top: 20px;
     background-color: #CCCCCC;
-    color: white;
     font-size: 20px;
     text-align: center;
-    margin-top:10px;
-    height: 64px;
-    line-height: 64px;
+    color: white;
+
 }

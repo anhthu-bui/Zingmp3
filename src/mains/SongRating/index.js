@@ -1,8 +1,5 @@
-/* eslint-disable no-unused-vars */
-// eslint-disable-next-line no-unused-vars
+// others
 import "./style.scss";
 
-function SongRating() {
-  return <div className="SongRating">SongRating</div>;
-}
+const SongRating = () => <div className="song-rating-wrapper">SongRating</div>;
 export default SongRating;

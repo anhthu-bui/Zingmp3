@@ -1,10 +1,9 @@
-.SongRating {
+.song-rating-wrapper {
+    grid-column: 1 / 3;
+    grid-row: 2 / 5;
     margin-bottom: 20px;
     background-color: blue;
-    color: white;
     font-size: 20px;
     text-align: center;
-    max-height: 650px;
-    min-height: 650px;
-    line-height: 600px;
+    color: white;
 }

@@ -1,23 +1,23 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable no-undef */
-/* eslint-disable no-unused-vars */
+// libs
+import PropTypes from "prop-types";
+// others
 import "./style.scss";
 
-function AlbumVideoHot(props) {
-  let style = {};
-  if (props) {
-    // eslint-disable-next-line react/prop-types
-    style = {
-      backgroundColor: props.backgroundColor,
-      minHeight: props.height,
-      maxHeight: props.height,
-    };
-  }
+const AlbumVideoHot = ({ classname, backgroundColor, title }) => {
+  const style = {
+    backgroundColor,
+  };
   return (
     // eslint-disable-next-line react/jsx-no-comment-textnodes
-    <div className="album-video-hot" style={style}>
-      AlbumVideoHot_{props.title}
+    <div className={classname} style={style}>
+      AlbumVideoHot_{title}
     </div>
   );
-}
+};
+
+AlbumVideoHot.propTypes = {
+  classname: PropTypes.string.isRequired,
+  backgroundColor: PropTypes.string,
+  title: PropTypes.string,
+};
 export default AlbumVideoHot;

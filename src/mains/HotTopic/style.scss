@@ -1,10 +1,9 @@
 .hot-topic {
-    margin-bottom: 30px;
+    grid-column: 3 / 4;
+    grid-row: 1 / 4;
+    margin: 0px 0px 30px 20px;
     background-color: green;
-    color: white;
     text-align: center;
     font-size: 20px;
-    min-height: 300px;
-    max-height: 300px;
-    line-height: 300px;
+    color: white;
 }
