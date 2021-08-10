@@ -1,12 +1,12 @@
-import "./App.css";
+// libs
 import Mains from "./mains";
+// others
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <Mains />
-    </div>
-  );
-}
+const App = () => (
+  <div className="App">
+    <Mains />
+  </div>
+);
 
 export default App;

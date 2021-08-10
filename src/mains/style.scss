@@ -15,6 +15,7 @@
         display: grid;
         grid-template-columns: 350px 350 320px;
         grid-template-rows: 30px 150px 150px 400px 500px 50px 450px 30px 30px 650px 30px 50px 500px 50px 200px 70px;
+        grid-gap: 20px;
         padding: 10px;
         background-color: white;
     }
