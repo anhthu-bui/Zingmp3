@@ -1,14 +1,12 @@
-/* eslint-disable import/extensions */
-/* eslint-disable no-unused-vars */
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Mains from "./mains/index.js";
+import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Mains />
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );

@@ -8,7 +8,6 @@ const AlbumVideoHot = ({ classname, backgroundColor, title }) => {
     backgroundColor,
   };
   return (
-    // eslint-disable-next-line react/jsx-no-comment-textnodes
     <div className={classname} style={style}>
       AlbumVideoHot_{title}
     </div>
