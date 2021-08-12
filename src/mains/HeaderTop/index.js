@@ -1,4 +1,3 @@
-/* eslint-disable import/no-duplicates */
 // libs
 import { Input } from "antd";
 import { Row, Col } from "antd";

@@ -1,15 +1,15 @@
 .navbar-wrapper {
+    max-height: 40px;
     padding-left: 160px;
     padding-right: 160px;
     background-color: #e4e4e4;
-    max-height: 40px;
     a {
         display: block;
-        padding: 0px 15px 0px 15px;
-        color: black;
         height: 40px;
+        padding: 0px 15px 0px 15px;
         line-height: 40px;
         font-weight: 400;
+        color: black;
         &:hover{
             background-color:white;
             color: #a845de;
@@ -44,9 +44,9 @@
             }
         }
         .upload {
+            float: right;
             padding-right: 40px;
             padding-left: 0px;
-            float: right;
             &:hover{
                 opacity: 0.8;
                 background-color: #e4e4e4;

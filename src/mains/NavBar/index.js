@@ -1,4 +1,3 @@
-/* eslint-disable camelcase */
 // libs
 import { Row, Col } from "antd";
 import { HomeFilled, StopFilled, UpCircleFilled } from "@ant-design/icons";
