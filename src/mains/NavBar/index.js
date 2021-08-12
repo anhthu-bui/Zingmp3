@@ -1,8 +1,6 @@
 // libs
 import { Row, Col } from "antd";
 import { HomeFilled, StopFilled, UpCircleFilled } from "@ant-design/icons";
-// components
-// import DropDownComponent from "../../components/DropDownComponent";
 // others
 import "./style.scss";
 import "antd/dist/antd.css";

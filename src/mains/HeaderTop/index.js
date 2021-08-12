@@ -1,9 +1,9 @@
 // libs
 import { Input } from "antd";
 import { Row, Col } from "antd";
-import "antd/dist/antd.css";
 // others
 import "./style.scss";
+import "antd/dist/antd.css";
 import LogoZingmp3 from "../../images/logo_zingmp3.png";
 
 const { Search } = Input;
