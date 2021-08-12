@@ -1,0 +1,61 @@
+.header-top-wrapper{
+    padding-left: 160px;
+    padding-right: 160px;
+    background-color: #1c1c1c;
+    height: 50px;
+    .header-top-wrapper-inner{
+        padding-top: 10px;
+    }
+    .header-top-logo{
+        width: 100%;
+        height: 100%;
+        img {
+            max-width: 100%;
+            vertical-align: inherit;
+        }
+    }
+    .header-top-search{
+        @global:ant-input-group-addon {
+            &:hover{
+                background-color: gray;
+            }
+        }
+    }
+
+    .header-top-menu {
+        display: block;
+        margin-top: -0.75rem;
+        margin-left: -3rem;
+        li {
+            list-style: none;
+            float: left;
+            a {
+                display: block;
+                padding: 0px 10px 0px 10px;
+                color: white;
+                // maheight: 50px;
+                line-height: 50px;
+                &:hover{
+                    background-color:black;
+                    color: #a845de;
+                }
+            }
+            .active {
+                background-color: black;
+                color: #a845de;
+            }
+            
+        }  
+    }
+
+    .header-top-login {
+        margin-top: -1rem;
+        padding-left: 100px;
+        a {
+            color: white;
+            &:hover{
+                text-decoration-line: underline;
+            }
+        }
+    }
+}
