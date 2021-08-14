@@ -3,19 +3,18 @@ import PropTypes from "prop-types";
 // others
 import "./style.scss";
 
-const AlbumVideoHot = ({ classname, backgroundColor, title }) => {
+const AlbumVideoHot = ({ backgroundColor, title }) => {
   const style = {
     backgroundColor,
   };
   return (
-    <div className={classname} style={style}>
+    <div className="album-video-hot" style={style}>
       AlbumVideoHot_{title}
     </div>
   );
 };
 
 AlbumVideoHot.propTypes = {
-  classname: PropTypes.string.isRequired,
   backgroundColor: PropTypes.string,
   title: PropTypes.string,
 };
