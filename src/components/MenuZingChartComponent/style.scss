@@ -1,0 +1,28 @@
+.menu-zingchart-wrapper {
+    display: flex;
+    margin-bottom: 0px;
+    padding: 0px;
+    li {
+        list-style: none;
+        text-align: center;
+        height: 42px;
+        a {
+            padding: 10px 22px 10px 23px;
+            background: #ecf0f1;
+            color: #333;
+            text-align: center;
+            font-size: 16px;
+            line-height: 42px;
+            border-top: 2px solid #ECF0F1;
+            &:hover{
+                border-top: 2px solid #721799;
+            }
+        }
+        .active {
+            border-top: 2px solid #721799;
+            border-right: 1px solid #ddd;
+            border-left: 1px solid #ddd;
+            background: #fff;
+        }
+    }
+}

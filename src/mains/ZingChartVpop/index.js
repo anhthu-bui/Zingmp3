@@ -1,12 +1,33 @@
+// libs
+import { Divider } from "antd";
 // components
-import ZingChart from "../ZingChart";
+// import ZingChart from "../ZingChart";
+import TitleComponent from "../../components/TitleComponent";
+import ItemDetail from "../../organs/ItemDetailVPop";
 // others
 import "./style.scss";
 
-const ZingChartVpop = () => (
-  <div className="zing-chart-vpop">
-    <ZingChart title="ZingChartVpop" backgroundColor="brown" />
+const ZingChartVPop = () => (
+  <div className="zing-chart-vpop-wrapper">
+    <TitleComponent titleName="Nhạc Việt Mới" fontSize="26px" />
+    <ul className="vpop-list">
+      <li>
+        <ItemDetail />
+      </li>
+      <Divider />
+      <li>
+        <ItemDetail />
+      </li>
+      <Divider />
+      <li>
+        <ItemDetail />
+      </li>
+      <Divider />
+      <li>
+        <ItemDetail />
+      </li>
+    </ul>
   </div>
 );
 
-export default ZingChartVpop;
+export default ZingChartVPop;

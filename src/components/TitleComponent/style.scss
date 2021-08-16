@@ -1,0 +1,18 @@
+.title-wrapper {
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 300 !important;
+    a{
+        color: purple !important;
+        &:hover {
+            opacity: 0.75;
+        }
+    }
+    .title-link {
+        margin-right: auto;
+    }
+    .play-all {
+        margin-left: 40px;
+        font-size: 25px;
+    }
+}

@@ -1,8 +1,11 @@
-.zing-chart-vpop {
+.zing-chart-vpop-wrapper {
     grid-column: 1 / 2;
     grid-row: 11 / 14;
     margin-left: 350px;
-    font-size: 20px;
-    text-align: center;
-    color: white;
+    .vpop-list {
+        li {
+            margin-top: -15px;
+            margin-bottom: -15px;
+        }
+    }
 }

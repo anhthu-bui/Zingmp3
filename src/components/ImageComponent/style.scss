@@ -1,0 +1,20 @@
+.image-wrapper {
+    margin-right: 40px;
+    &-inner{
+        position: relative;
+        display: block;
+        .ranking{
+            position: absolute;
+            bottom: 2px;
+            color: #ffffff;
+            left: 2px;
+            z-index: 1;
+        }
+        .play-song {
+            position: absolute;
+            top: 30px;
+            left: 45px;
+            color: white;
+        }
+    }
+}
