@@ -1,7 +1,6 @@
 // libs
 import { Divider } from "antd";
 // components
-// import ZingChart from "../ZingChart";
 import TitleComponent from "../../components/TitleComponent";
 import ItemDetail from "../../organs/ItemDetailMV";
 import MenuZingChartComponent from "../../components/MenuZingChartComponent";
