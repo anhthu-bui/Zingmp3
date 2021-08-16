@@ -2,7 +2,6 @@
 import { Row, Col } from "antd";
 // others
 import "./style.scss";
-import "antd/dist/antd.css";
 import IconZingmp3 from "../../images/icon_zingmp3.png";
 import IconZalo from "../../images/logo_zalo.png";
 import IconYoutube from "../../images/logo_youtube.png";
@@ -13,15 +12,15 @@ import DmcaProtected from "../../images/dmca_protected.png";
 const Footer = () => (
   <div className="footer-wrapper">
     <Row className="footer-wrapper-inner">
-      <Col span={8} className="copy-right">
+      <Col span={8} className="footer-wrapper-inner-copy-right">
         <img src={IconZingmp3} alt="Logo_Zingmp3" />
-        <p className="info_copy-right">
+        <p className="footer-wrapper-inner-copy-right-info">
           © 2015 <span> VNG Corporation</span>
         </p>
         <p>Giấy phép MXH số 314/GP-BTTTT.</p>
       </Col>
       <Col span={10}>
-        <ul className="list_footer">
+        <ul className="footer-wrapper-inner-list_footer">
           <li>
             <a href="/">Giới thiệu</a>
           </li>
@@ -54,7 +53,7 @@ const Footer = () => (
           </li>
         </ul>
       </Col>
-      <Col span={6} className="list_logo">
+      <Col span={6} className="footer-wrapper-inner-list-logo">
         <a href="#">
           <img src={IconFb} alt="Facebook" style={{ width: "35px" }} />
         </a>
@@ -67,7 +66,7 @@ const Footer = () => (
         <a href="#">
           <img src={IconGg} alt="Google" style={{ width: "35px" }} />
         </a>
-        <div className="dmca-badge">
+        <div className="footer-wrapper-inner-list-logo-dmca-badge">
           <a href="#">
             <img
               src={DmcaProtected}
