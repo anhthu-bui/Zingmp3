@@ -145,6 +145,4 @@ const MenuTop = [
 //   item1: "Mua VIP",
 //   item2: "Giới Thiệu VIP",
 // };
-
-// eslint-disable-next-line camelcase
 export default MenuTop;
