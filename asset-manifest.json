@@ -1,25 +1,29 @@
 {
   "files": {
-    "main.css": "/Zingmp3/static/css/main.575158f2.chunk.css",
-    "main.js": "/Zingmp3/static/js/main.fe7274e0.chunk.js",
-    "main.js.map": "/Zingmp3/static/js/main.fe7274e0.chunk.js.map",
-    "runtime-main.js": "/Zingmp3/static/js/runtime-main.ff200040.js",
-    "runtime-main.js.map": "/Zingmp3/static/js/runtime-main.ff200040.js.map",
+    "main.css": "/Zingmp3/static/css/main.7bdaca48.chunk.css",
+    "main.js": "/Zingmp3/static/js/main.aa784401.chunk.js",
+    "main.js.map": "/Zingmp3/static/js/main.aa784401.chunk.js.map",
+    "runtime-main.js": "/Zingmp3/static/js/runtime-main.efe1bf85.js",
+    "runtime-main.js.map": "/Zingmp3/static/js/runtime-main.efe1bf85.js.map",
     "static/css/2.630ef54a.chunk.css": "/Zingmp3/static/css/2.630ef54a.chunk.css",
-    "static/js/2.c31ba119.chunk.js": "/Zingmp3/static/js/2.c31ba119.chunk.js",
-    "static/js/2.c31ba119.chunk.js.map": "/Zingmp3/static/js/2.c31ba119.chunk.js.map",
-    "static/js/3.caa15372.chunk.js": "/Zingmp3/static/js/3.caa15372.chunk.js",
-    "static/js/3.caa15372.chunk.js.map": "/Zingmp3/static/js/3.caa15372.chunk.js.map",
+    "static/js/2.af6a0f50.chunk.js": "/Zingmp3/static/js/2.af6a0f50.chunk.js",
+    "static/js/2.af6a0f50.chunk.js.map": "/Zingmp3/static/js/2.af6a0f50.chunk.js.map",
+    "static/js/3.6501de6b.chunk.js": "/Zingmp3/static/js/3.6501de6b.chunk.js",
+    "static/js/3.6501de6b.chunk.js.map": "/Zingmp3/static/js/3.6501de6b.chunk.js.map",
     "index.html": "/Zingmp3/index.html",
     "static/css/2.630ef54a.chunk.css.map": "/Zingmp3/static/css/2.630ef54a.chunk.css.map",
-    "static/css/main.575158f2.chunk.css.map": "/Zingmp3/static/css/main.575158f2.chunk.css.map",
-    "static/js/2.c31ba119.chunk.js.LICENSE.txt": "/Zingmp3/static/js/2.c31ba119.chunk.js.LICENSE.txt"
+    "static/css/main.7bdaca48.chunk.css.map": "/Zingmp3/static/css/main.7bdaca48.chunk.css.map",
+    "static/js/2.af6a0f50.chunk.js.LICENSE.txt": "/Zingmp3/static/js/2.af6a0f50.chunk.js.LICENSE.txt",
+    "static/media/icon_zingmp3.894e61cf.png": "/Zingmp3/static/media/icon_zingmp3.894e61cf.png",
+    "static/media/logo_fb.50494356.jpeg": "/Zingmp3/static/media/logo_fb.50494356.jpeg",
+    "static/media/logo_youtube.ec98980d.png": "/Zingmp3/static/media/logo_youtube.ec98980d.png",
+    "static/media/logo_zalo.8efa04be.png": "/Zingmp3/static/media/logo_zalo.8efa04be.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.ff200040.js",
+    "static/js/runtime-main.efe1bf85.js",
     "static/css/2.630ef54a.chunk.css",
-    "static/js/2.c31ba119.chunk.js",
-    "static/css/main.575158f2.chunk.css",
-    "static/js/main.fe7274e0.chunk.js"
+    "static/js/2.af6a0f50.chunk.js",
+    "static/css/main.7bdaca48.chunk.css",
+    "static/js/main.aa784401.chunk.js"
   ]
 }
