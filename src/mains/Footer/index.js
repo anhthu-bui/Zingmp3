@@ -12,15 +12,15 @@ import DmcaProtected from "../../images/dmca_protected.png";
 const Footer = () => (
   <div className="footer-wrapper">
     <Row className="footer-wrapper-inner">
-      <Col span={8} className="footer-wrapper-inner-copy-right">
+      <Col span={8} className="copy-right">
         <img src={IconZingmp3} alt="Logo_Zingmp3" />
-        <p className="footer-wrapper-inner-copy-right-info">
+        <p className="copy-right-info">
           © 2015 <span> VNG Corporation</span>
         </p>
         <p>Giấy phép MXH số 314/GP-BTTTT.</p>
       </Col>
       <Col span={10}>
-        <ul className="footer-wrapper-inner-list_footer">
+        <ul className="list-footer">
           <li>
             <a href="/">Giới thiệu</a>
           </li>
@@ -53,7 +53,7 @@ const Footer = () => (
           </li>
         </ul>
       </Col>
-      <Col span={6} className="footer-wrapper-inner-list-logo">
+      <Col span={6} className="list-logo">
         <a href="#">
           <img src={IconFb} alt="Facebook" style={{ width: "35px" }} />
         </a>
@@ -66,13 +66,9 @@ const Footer = () => (
         <a href="#">
           <img src={IconGg} alt="Google" style={{ width: "35px" }} />
         </a>
-        <div className="footer-wrapper-inner-list-logo-dmca-badge">
+        <div className="dmca-badge">
           <a href="#">
-            <img
-              src={DmcaProtected}
-              alt="Dmca_protected"
-              //   style={{ width: " }}
-            />
+            <img src={DmcaProtected} alt="Dmca_protected" />
           </a>
         </div>
         <a href="#">Phiên bản mobile</a>
