@@ -11,16 +11,16 @@ const HeaderTop = () => (
   <div className="header-top-wrapper">
     <Row className="header-top-wrapper-inner">
       <Col span={4}>
-        <a href="/" className="header-top-wrapper-inner-logo">
+        <a href="/" className="logo">
           <img src={LogoZingmp3} alt="Logo_Zingmp3" />
         </a>
       </Col>
       <Col span={10}>
-        <form className="header-top-wrapper-inner-search">
+        <form className="search">
           <Search placeholder="Nhập nội dung cần tìm" style={{ width: 400 }} />
         </form>
       </Col>
-      <Col span={6} className="header-top-wrapper-inner-menu">
+      <Col span={6} className="menu-top">
         <ul>
           <li>
             <a href="/" className="active">
@@ -38,7 +38,7 @@ const HeaderTop = () => (
           </li>
         </ul>
       </Col>
-      <Col span={4} className="header-top-wrapper-inner-login">
+      <Col span={4} className="login">
         <a href="#">Đăng nhập</a>
       </Col>
     </Row>

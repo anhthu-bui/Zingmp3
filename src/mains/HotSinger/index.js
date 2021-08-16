@@ -1,5 +1,5 @@
 // others
 import "./style.scss";
 
-const HotSinger = () => <div className="hot-singer">Hot Singer</div>;
+const HotSinger = () => <div className="hot-singer-wrapper">Hot Singer</div>;
 export default HotSinger;

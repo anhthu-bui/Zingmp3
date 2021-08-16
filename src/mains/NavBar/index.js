@@ -8,10 +8,10 @@ import DataMenu from "../../dataSource/Menu";
 const NavBar = () => (
   <div className="navbar-wrapper">
     <Row className="navbar-wrapper-inner">
-      <Col span={16} className="navbar-wrapper-inner-menu-navbar">
+      <Col span={16} className="menu-navbar">
         <ul>
           <li>
-            <a href="#" className="navbar-wrapper-inner-menu-navbar-icon-home">
+            <a href="#" className="icon-home">
               <HomeFilled />
             </a>
           </li>
@@ -22,11 +22,11 @@ const NavBar = () => (
           ))}
         </ul>
       </Col>
-      <Col span={8} className="navbar-wrapper-inner-navbar-right">
-        <a href="#" className="navbar-wrapper-inner-navbar-right-turn-off-ads">
+      <Col span={8} className="navbar-right">
+        <a href="#" className="turn-off-ads">
           <StopFilled /> Tắt quảng cáo
         </a>
-        <a href="#" className="navbar-wrapper-inner-navbar-right-upload">
+        <a href="#" className="upload">
           <UpCircleFilled style={{ fontSize: "20px", color: "#a845de;" }} />
         </a>
       </Col>
