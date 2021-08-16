@@ -3,7 +3,8 @@ import { Row, Col } from "antd";
 import { HomeFilled, StopFilled, UpCircleFilled } from "@ant-design/icons";
 // others
 import "./style.scss";
-import DataMenu from "../../dataSource/Menu";
+// dataSources
+import dataMenu from "../../dataSources/Menu";
 
 const NavBar = () => (
   <div className="navbar-wrapper">
@@ -15,7 +16,7 @@ const NavBar = () => (
               <HomeFilled />
             </a>
           </li>
-          {DataMenu.map((item) => (
+          {dataMenu.map((item) => (
             <li key={item.id}>
               <a href="/">{item.name}</a>
             </li>

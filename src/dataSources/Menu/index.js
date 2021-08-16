@@ -1,4 +1,4 @@
-const MenuTop = [
+const menuTop = [
   {
     id: "menu00",
     name: "Nhạc Của Tôi",
@@ -145,4 +145,4 @@ const MenuTop = [
 //   item1: "Mua VIP",
 //   item2: "Giới Thiệu VIP",
 // };
-export default MenuTop;
+export default menuTop;
