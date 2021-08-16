@@ -8,7 +8,7 @@ const ZingChart = ({ backgroundColor, title }) => {
     backgroundColor,
   };
   return (
-    <div className="zing-chart" style={style}>
+    <div className="zing-chart-wrapper" style={style}>
       Zing Chart_{title}
     </div>
   );

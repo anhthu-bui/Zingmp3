@@ -1,22 +1,35 @@
-// eslint-disable-next-line camelcase
-const menu_zingchart = [
+const menuTop = [
   {
-    zingchart: [
-      {
-        item1: [
-          {
-            id: 1,
-            name: "Bài Hát",
-          },
-        ],
-        item2: [
-          {
-            id: 2,
-            name: "Bài MV",
-          },
-        ],
-      },
-    ],
+    id: "menu00",
+    name: "Nhạc Của Tôi",
+  },
+  {
+    id: "menu01",
+    name: "#zingchart",
+  },
+  {
+    id: "menu02",
+    name: "Top 100",
+  },
+  {
+    id: "menu03",
+    name: "Chủ Đề",
+  },
+  {
+    id: "menu04",
+    name: "Video",
+  },
+  {
+    id: "menu05",
+    name: "Album",
+  },
+  {
+    id: "menu06",
+    name: "Nghệ Sĩ",
+  },
+  {
+    id: "menu07",
+    name: "VIP",
   },
 ];
 
@@ -132,6 +145,4 @@ const menu_zingchart = [
 //   item1: "Mua VIP",
 //   item2: "Giới Thiệu VIP",
 // };
-
-// eslint-disable-next-line camelcase
-export default menu_zingchart;
+export default menuTop;

@@ -2,7 +2,7 @@
     padding-left: 200px;
     padding-right: 200px;
     background-color: #222428;
-    .footer-wrapper-inner {
+    &-inner {
         padding-top: 20px;
         padding-bottom: 10px;
         .copy-right {
@@ -15,15 +15,15 @@
             }
             p {
                 margin-top: -10px;
-                padding-right: 30px;
+                padding-right: 40px;
             }
-            .info_copy-right {
+            &-info {
                 padding-top: 20px;
-                padding-right: 80px;
+                padding-right: 100px;
             }
         }
 
-        .list_footer {
+        .list-footer {
             display: block;
             margin-left: -5px;
             list-style-type: none;
@@ -39,7 +39,7 @@
             }
         }
 
-        .list_logo {
+        .list-logo {
             a {
                 padding: 2px;
                 opacity: 0.75;

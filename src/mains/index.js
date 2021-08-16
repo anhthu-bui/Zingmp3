@@ -1,6 +1,5 @@
 // libs
 import { Layout } from "antd";
-import "antd/dist/antd.css";
 // components
 import HeaderZing from "./Header";
 import FooterZing from "./Footer";

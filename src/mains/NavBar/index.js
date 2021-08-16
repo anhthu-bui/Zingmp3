@@ -3,11 +3,12 @@ import { Row, Col } from "antd";
 import { HomeFilled, StopFilled, UpCircleFilled } from "@ant-design/icons";
 // others
 import "./style.scss";
-import "antd/dist/antd.css";
+// dataSources
+import dataMenu from "../../dataSources/Menu";
 
 const NavBar = () => (
   <div className="navbar-wrapper">
-    <Row>
+    <Row className="navbar-wrapper-inner">
       <Col span={16} className="menu-navbar">
         <ul>
           <li>
@@ -15,32 +16,11 @@ const NavBar = () => (
               <HomeFilled />
             </a>
           </li>
-          <li>
-            <a href="/" className="active">
-              Nhạc Cá Nhân
-            </a>
-          </li>
-          <li>
-            <a href="/">#zingchart</a>
-          </li>
-          <li>
-            <a href="/">Top 100</a>
-          </li>
-          <li>
-            <a href="/">Chủ Đề</a>
-          </li>
-          <li>
-            <a href="/">Video</a>
-          </li>
-          <li>
-            <a href="/">Album</a>
-          </li>
-          <li>
-            <a href="/">Nghệ Sĩ</a>
-          </li>
-          <li>
-            <a href="/">VIP</a>
-          </li>
+          {dataMenu.map((item) => (
+            <li key={item.id}>
+              <a href="/">{item.name}</a>
+            </li>
+          ))}
         </ul>
       </Col>
       <Col span={8} className="navbar-right">

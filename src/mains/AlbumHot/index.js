@@ -4,7 +4,7 @@ import AlbumVideoHot from "../AlbumVideoHot";
 import "./style.scss";
 
 const AlbumHot = () => (
-  <div className="album-hot">
+  <div className="album-hot-wrapper">
     <AlbumVideoHot title="Album Hot" backgroundColor="brown" />
   </div>
 );
