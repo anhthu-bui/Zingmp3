@@ -1,18 +1,18 @@
+// dataSources
+import dataPartner from "../../dataSources/Partner";
 // others
 import "./style.scss";
-// dataSources
-import dataPartner from "../../dataSource/PartnerList";
-import img from "../../images/ben-thanh_partner.jpeg";
-import img2 from "../../images/riav_partner.jpeg";
 
 const Partner = () => (
   <div className="partner-wrapper">
-    <span className="partner-title">Đối Tác</span>
-    {dataPartner.map((item) => (
-      <img src={item.image} key={item.name} />
-    ))}
-    <img src={img} />
-    <img src={img2} />
+    <span className="partner-title">ĐỐI TÁC</span>
+    <ul className="partner-list">
+      {dataPartner.map((item) => (
+        <li key={item.name}>
+          <img src={item.image} />
+        </li>
+      ))}
+    </ul>
   </div>
 );
 export default Partner;
