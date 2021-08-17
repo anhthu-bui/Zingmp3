@@ -8,7 +8,7 @@ const AlbumVideoHot = ({ backgroundColor, title }) => {
     backgroundColor,
   };
   return (
-    <div className="album-video-hot" style={style}>
+    <div className="album-video-hot-wrapper" style={style}>
       AlbumVideoHot_{title}
     </div>
   );

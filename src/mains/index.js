@@ -12,5 +12,4 @@ const Main = () => (
     <FooterZing />
   </div>
 );
-
 export default Main;

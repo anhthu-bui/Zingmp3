@@ -1,4 +1,3 @@
-// eslint-disable-next-line camelcase
 const menuTop = [
   {
     id: "menu00",
@@ -180,5 +179,4 @@ const menuFooter = [
 //   item2: "Giới Thiệu VIP",
 // };
 
-// eslint-disable-next-line camelcase
 export { menuTop, menuFooter };
