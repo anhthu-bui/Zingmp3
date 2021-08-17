@@ -1,7 +1,11 @@
-.zing-chart-album {
+.zing-chart-album-wrapper {
     grid-column: 2 / 3;
     grid-row: 9 / 12;
+    width: 100%;
     font-size: 20px;
     text-align: center;
     color: white;
+    li {
+        margin-bottom: 10px;
+    }
 }

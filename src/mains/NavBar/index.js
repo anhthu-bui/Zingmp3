@@ -4,7 +4,7 @@ import { HomeFilled, StopFilled, UpCircleFilled } from "@ant-design/icons";
 // others
 import "./style.scss";
 // dataSources
-import dataMenu from "../../dataSources/Menu";
+import { menuTop } from "../../dataSources/Menu";
 
 const NavBar = () => (
   <div className="navbar-wrapper">
@@ -16,7 +16,7 @@ const NavBar = () => (
               <HomeFilled />
             </a>
           </li>
-          {dataMenu.map((item) => (
+          {menuTop.map((item) => (
             <li key={item.id}>
               <a href="/">{item.name}</a>
             </li>

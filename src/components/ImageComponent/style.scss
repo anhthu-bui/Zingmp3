@@ -1,0 +1,33 @@
+.image-wrapper{
+    margin-right: 40px;
+    &-inner{
+        position: relative;
+        display: block;
+        .raking_number {
+            position: absolute;
+            bottom: 2px;
+            left: 2px;
+            z-index: 1;
+            margin-right: "40px";
+            color: "white";
+            .ranking{
+                @extend .raking_number;
+                margin-right: "50px";
+                color: "black";
+            }
+        }
+        &:hover {
+            opacity: 0.75;
+            .show {
+                display: block;
+                position: absolute;
+                top: 30px;
+                left: 45px;
+                color: white;
+            }   
+        }
+        .playsong {
+            display:none;
+        }
+    }
+}

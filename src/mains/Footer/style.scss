@@ -2,56 +2,78 @@
     padding-left: 200px;
     padding-right: 200px;
     background-color: #222428;
-    &-inner {
+    .footer-wrapper-inner {
+        display: flex;
         padding-top: 20px;
         padding-bottom: 10px;
         .copy-right {
-            display: block;
+            display: flex;
+            margin-left: auto;
+            width: 30%;
             padding-left: 20px;
             font-size: 12px;
             color: gray;
             img {
-                float: left;
+                // margin-right: auto;
+                max-height: 50px;
             }
-            p {
-                margin-top: -10px;
-                padding-right: 40px;
-            }
-            &-info {
-                padding-top: 20px;
-                padding-right: 100px;
-            }
-        }
-
-        .list-footer {
-            display: block;
-            margin-left: -5px;
-            list-style-type: none;
-            li {
-                margin-bottom: 10px;
-                margin-right: 5px;
-                float: left;
-                width: 90px;
+            .info_copy-right {
                 text-align: left;
-                a {
-                    color: white;
-                }
+                padding-left: 10px;
+                padding-top: -20px;
+                
             }
         }
-
-        .list-logo {
-            a {
-                padding: 2px;
-                opacity: 0.75;
-                color: white;
-                &:hover{
-                    opacity: 1;
-                    color: #a845de;
+        .footer-right {
+            display: flex;
+            width: 70%;
+            .list_footer {
+                list-style-type: none;
+                margin-bottom: 10px;
+                margin-left: auto;
+                text-align: left;
+                li {
+                    display: inline-block;
+                    width: 90px;
+                    margin: 0px 10px 10px 0px;
+                    text-align: left;
+                    a {
+                        color: white;
+                    }
                 }
             }
-            .dmca-badge {
-                margin-top: 5px;
-                margin-right: 110px;
+    
+            .list-logo {
+                width: 50%;
+                margin-right:40px;
+                .list-logo-top {
+                    display: inline-block;
+                    a {
+                        padding: 2px;
+                        opacity: 0.75;
+                        color: white;
+                        &:hover{
+                            opacity: 1;
+                            color: #a845de;
+                        }
+                        .FaceBook{
+                            width: 35px;
+                        }
+                        .Youtube {
+                            width: 35px;
+                        }
+                        .Google {
+                            width: 35px;
+                        }
+                        .Zalo{
+                            width: 45px;
+                        }
+                    }
+                }
+                .dmca-badge {
+                    margin-top: 5px;
+                }
+                
             }
         }
     }

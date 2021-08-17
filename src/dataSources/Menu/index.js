@@ -33,6 +33,39 @@ const menuTop = [
   },
 ];
 
+const menuFooter = [
+  {
+    name: "Giới thiệu",
+  },
+  {
+    name: "Điều khoản",
+  },
+  {
+    name: "Quảng cáo",
+  },
+  {
+    name: "FAQs",
+  },
+  {
+    name: "Copyright",
+  },
+  {
+    name: "Zing MP3 VIP",
+  },
+  {
+    name: "Ứng dụng",
+  },
+  {
+    name: "Góp ý",
+  },
+  {
+    name: "APIs",
+  },
+  {
+    name: "Liên hệ",
+  },
+];
+
 //   week = [
 //     {
 //       item1: "Bài hát",
@@ -145,4 +178,5 @@ const menuTop = [
 //   item1: "Mua VIP",
 //   item2: "Giới Thiệu VIP",
 // };
-export default menuTop;
+
+export { menuTop, menuFooter };

@@ -1,0 +1,13 @@
+.content-body-wrapper {
+    margin-left: 200px;
+    margin-right: 200px;
+    
+    &-inner {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 30px 150px 150px 400px 600px 50px 600px 30px 30px 750px 30px 50px 500px 50px 200px 70px;
+        grid-gap: 20px;
+        padding: 10px;
+        background-color: white;
+    }
+}
