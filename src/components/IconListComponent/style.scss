@@ -1,0 +1,10 @@
+.icon-list-wrapper {
+    margin-left: 100px;
+    a {
+        padding: 10px;
+        color: purple;
+        &:hover{
+            opacity: 0.75;
+        }
+    }
+}
