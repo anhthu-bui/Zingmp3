@@ -1,5 +1,3 @@
-// others
-import "./style.scss";
 // images
 import IconZingmp3 from "../../images/icon_zingmp3.png";
 import IconZalo from "../../images/logo_zalo.png";
@@ -9,6 +7,8 @@ import IconFb from "../../images/logo_fb.jpeg";
 import DmcaProtected from "../../images/dmca_protected.png";
 // dataSources
 import { menuFooter } from "../../dataSources/Menu";
+// others
+import "./style.scss";
 
 const iconFooter = [
   {
