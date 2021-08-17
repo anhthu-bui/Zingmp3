@@ -8,33 +8,32 @@ import ItemCover from "../../organs/ItemCoverMV";
 // others
 import "./style.scss";
 
-const ZingChartMV = () => (
-  <div className="zing-chart-mv-wrapper">
-    <TitleComponent
-      titleName="#ZingChart Tuần - MV"
-      fontSize="18px"
-      iconPlay="true"
-    />
-    <MenuZingChartComponent />
-    <ItemCover />
-    <ul>
-      <li>
-        <ItemDetail />
-      </li>
-      <Divider />
-      <li>
-        <ItemDetail />
-      </li>
-      <Divider />
-      <li>
-        <ItemDetail />
-      </li>
-      <Divider />
-      <li>
-        <ItemDetail />
-      </li>
-    </ul>
-  </div>
-);
+const ZingChartMV = () => {
+  const itemDetail = [
+    <ItemDetail key="01" />,
+    <ItemDetail key="01" />,
+    <ItemDetail key="01" />,
+    <ItemDetail key="01" />,
+  ];
+  return (
+    <div className="zing-chart-mv-wrapper">
+      <TitleComponent
+        titleName="#ZingChart Tuần - MV"
+        fontSize="18px"
+        iconPlay="true"
+      />
+      <MenuZingChartComponent />
+      <ItemCover />
+      <ul>
+        {itemDetail.map((item) => (
+          <li key={item}>
+            {item}
+            <Divider></Divider>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
 
 export default ZingChartMV;

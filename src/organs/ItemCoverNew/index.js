@@ -6,12 +6,7 @@ import imgCover from "../../images/img_cover1.jpeg";
 
 const ItemCoverNew = () => (
   <div className="item-cover-new-wrapper">
-    <ImageComponent
-      image={imgCover}
-      width="300px"
-      height="125px"
-      cover="false"
-    />
+    <ImageComponent image={imgCover} width="350px" height="125px" />
   </div>
 );
 export default ItemCoverNew;

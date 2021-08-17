@@ -7,18 +7,22 @@ import {
 // others
 import "./style.scss";
 
-const IconListComponent = () => (
-  <div className="icon-list-wrapper">
-    <a href="#">
-      <VerticalAlignBottomOutlined />
-    </a>
-    <a href="#">
-      <PlusOutlined />
-    </a>
-    <a href="#">
-      <ShareAltOutlined />
-    </a>
-  </div>
-);
+const IconListComponent = () => {
+  const icons = [
+    <VerticalAlignBottomOutlined key="first" />,
+    <PlusOutlined key="second" />,
+    <ShareAltOutlined key="third" />,
+  ];
+  return (
+    <div className="icon-list-wrapper">
+      {icons.map((item) => (
+        <a href="/" key={item}>
+          {item}
+        </a>
+      ))}
+      ;
+    </div>
+  );
+};
 
 export default IconListComponent;

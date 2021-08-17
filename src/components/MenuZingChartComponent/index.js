@@ -1,20 +1,21 @@
+// libs
+import classNames from "classnames";
 // others
 import "./style.scss";
 
-const MenuZingChartComponent = () => (
-  <ul className="menu-zingchart-wrapper">
-    <li>
-      <a href="#" className="active">
-        Việt Nam
-      </a>
-    </li>
-    <li>
-      <a href="#">US-UK</a>
-    </li>
-    <li>
-      <a href="#">K-Pop</a>
-    </li>
-  </ul>
-);
+const MenuZingChartComponent = () => {
+  const menu = ["Việt Nam", "US-UK", "K-Pop"];
+  return (
+    <ul className="menu-zingchart-wrapper">
+      {menu.map((item, index) => (
+        <li key={item}>
+          <a href="/" className={classNames({ active: index === 0 })}>
+            {item}
+          </a>
+        </li>
+      ))}
+    </ul>
+  );
+};
 
 export default MenuZingChartComponent;
