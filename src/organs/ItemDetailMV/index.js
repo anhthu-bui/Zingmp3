@@ -1,4 +1,4 @@
-// libs
+// components
 import ImageComponent from "../../components/ImageComponent";
 import InformationComponent from "../../components/InformationComponent";
 // others

@@ -8,32 +8,30 @@ import ItemCoverSong from "../../organs/ItemCoverSong";
 // others
 import "./style.scss";
 
-const ZingChartSong = () => {
-  const itemDetail = [
-    <ItemDetail key="01" />,
-    <ItemDetail key="01" />,
-    <ItemDetail key="01" />,
-    <ItemDetail key="01" />,
-  ];
-  return (
-    <div className="zing-chart-song-wrapper">
-      <TitleComponent
-        titleName="#ZingChart - Bài Hát"
-        fontSize="18px"
-        iconPlay="true"
-      />
-      <MenuZingChartComponent />
-      <ItemCoverSong />
-      <ul>
-        {itemDetail.map((item) => (
-          <li key={item}>
-            {item}
-            <Divider />
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-};
+const itemDetail = [
+  <ItemDetail key="01" />,
+  <ItemDetail key="01" />,
+  <ItemDetail key="01" />,
+  <ItemDetail key="01" />,
+];
+const ZingChartSong = () => (
+  <div className="zing-chart-song-wrapper">
+    <TitleComponent
+      titleName="#ZingChart - Bài Hát"
+      fontSize="18px"
+      iconPlay="true"
+    />
+    <MenuZingChartComponent />
+    <ItemCoverSong />
+    <ul>
+      {itemDetail.map((item) => (
+        <li key={item}>
+          {item}
+          <Divider />
+        </li>
+      ))}
+    </ul>
+  </div>
+);
 
 export default ZingChartSong;

@@ -10,6 +10,24 @@ import DmcaProtected from "../../images/dmca_protected.png";
 // dataSources
 import { menuFooter } from "../../dataSources/Menu";
 
+const iconFooter = [
+  {
+    src: IconFb,
+    name: "FaceBook",
+  },
+  {
+    src: IconZalo,
+    name: "Zalo",
+  },
+  {
+    src: IconYoutube,
+    name: "Youtube",
+  },
+  {
+    src: IconGg,
+    name: "Google",
+  },
+];
 const Footer = () => (
   <div className="footer-wrapper">
     <div className="footer-wrapper-inner">
@@ -32,19 +50,15 @@ const Footer = () => (
             ))}
           </ul>
         </div>
-        <div className="list_logo">
-          <a href="#">
-            <img src={IconFb} alt="Facebook" style={{ width: "35px" }} />
-          </a>
-          <a href="#">
-            <img src={IconZalo} alt="Zalo" style={{ width: "45px" }} />
-          </a>
-          <a href="#">
-            <img src={IconYoutube} alt="Youtube" style={{ width: "35px" }} />
-          </a>
-          <a href="#">
-            <img src={IconGg} alt="Google" style={{ width: "35px" }} />
-          </a>
+        <div className="list-logo">
+          <div className="list-logo-top">
+            {iconFooter.map((item) => (
+              <a href="#" key={item.key}>
+                <img className={item.name} src={item.src} alt={item.name} />
+              </a>
+            ))}
+            ;
+          </div>
           <div className="dmca-badge">
             <a href="#">
               <img src={DmcaProtected} alt="Dmca_protected" />
