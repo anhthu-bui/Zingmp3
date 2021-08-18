@@ -4,7 +4,7 @@ import ItemVideo from "../../organs/ItemVideoHot";
 // others
 import "./style.scss";
 
-const PlayList = [
+const VideoList = [
   <ItemVideo key="01" />,
   <ItemVideo key="02" />,
   <ItemVideo key="03" />,
@@ -22,7 +22,7 @@ const VideoHot = () => (
   <div className="video-hot-wrapper">
     <TitleComponent titleName="Video Hot" fontSize="26px" />
     <ul className="list-video">
-      {PlayList.map((item) => (
+      {VideoList.map((item) => (
         <li key={item}>{item}</li>
       ))}
     </ul>
