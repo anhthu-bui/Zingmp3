@@ -8,7 +8,7 @@ const ItemCoverSong = () => (
   <div className="item-cover-song-wrapper">
     <ImageComponent
       image={imgCover}
-      width="350px"
+      width="320px"
       height="125px"
       ranking="01"
     />

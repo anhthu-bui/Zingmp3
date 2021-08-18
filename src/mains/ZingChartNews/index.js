@@ -15,7 +15,7 @@ const ZingChartNew = () => (
   <div className="zing-chart-news-wrapper">
     <TitleComponent titleName="Tin tức âm nhạc" fontSize="18px" />
     <ItemCover />
-    <ul>
+    <ul className="list-news">
       {itemDetail.map((item) => (
         <li key={item}>
           {item}

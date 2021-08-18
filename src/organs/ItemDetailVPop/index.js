@@ -9,7 +9,7 @@ import img1 from "../../images/img1.jpeg";
 const ItemDetailVPop = () => (
   <div className="item-detail-vpop-wrapper">
     <ImageComponent image={img1} width="50px" cover="true" />
-    <InformationComponent name="Một phút" singer="Khởi My" />
+    <InformationComponent name="Một phút" singer="Khởi My" fontSize="14px" />
     <span className="icon-list">
       <IconListComponent />
     </span>

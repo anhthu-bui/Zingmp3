@@ -1,0 +1,13 @@
+.item-song-raking-top-wrapper {
+    display: flex;
+    .number-left{
+        text-align: left;
+    }
+    .item-song-raking-info {
+        display: flex;
+        width: 60%;
+    }
+    .number-right{
+        padding-left: 30px;
+    }
+}

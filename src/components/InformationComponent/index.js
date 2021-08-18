@@ -1,11 +1,12 @@
 // libs
+import classNames from "classnames";
 import PropTypes from "prop-types";
 // others
 import "./style.scss";
 
-const InformationComponent = ({ name, singer }) => (
-  <div className="information-wrapper">
-    <h3 className="information-name">
+const InformationComponent = ({ name, singer, fontSize, color }) => (
+  <div className="information-wrapper" style={{ fontSize }}>
+    <h3 className={classNames("information-name", { songRating: color })}>
       <a href="/">{name}</a>
     </h3>
     <div className="information-singer">
@@ -17,5 +18,7 @@ const InformationComponent = ({ name, singer }) => (
 InformationComponent.propTypes = {
   name: PropTypes.string,
   singer: PropTypes.string,
+  fontSize: PropTypes.string,
+  color: PropTypes.string,
 };
 export default InformationComponent;
