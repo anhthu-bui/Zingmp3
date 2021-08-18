@@ -8,12 +8,10 @@ import ItemCover from "../../organs/ItemCoverAlbum";
 // others
 import "./style.scss";
 
-const itemDetail = [
-  <ItemDetail key="01" />,
-  <ItemDetail key="01" />,
-  <ItemDetail key="01" />,
-  <ItemDetail key="01" />,
-];
+const itemDetail = new Array(4);
+for (let i = 0; i < itemDetail.length; i += 1) {
+  itemDetail[i] = <ItemDetail />;
+}
 const ZingChartAlbum = () => (
   <div className="zing-chart-album-wrapper">
     <TitleComponent titleName="#ZingChart Tuần - Album" fontSize="18px" />
@@ -23,7 +21,7 @@ const ZingChartAlbum = () => (
       {itemDetail.map((item) => (
         <li key={item}>
           {item}
-          <Divider />
+          <Divider style={{ margin: "10px 0px" }} />
         </li>
       ))}
     </ul>

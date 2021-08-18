@@ -1,23 +1,22 @@
 .title-wrapper {
-    display: flex;
     width: 100%;
     text-transform: uppercase;
     font-weight: 300 !important;
+    text-align: left;
     a{
-        color: purple !important;
+        color: purple;
         &:hover {
             opacity: 0.75;
+            color: purple;
         }
-    }
-    .title-link {
-        margin-right: auto;
     }
     .play-icon {
         display: none;
         &.playAll{
             display: inline-block;
-            margin-left: 20px;
+            padding-left: 20%;
             font-size: 25px;
+            color: gray;
         }
     }
 }

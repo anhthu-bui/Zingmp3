@@ -6,12 +6,10 @@ import ItemDetail from "../../organs/ItemDetailVPop";
 // others
 import "./style.scss";
 
-const itemDetail = [
-  <ItemDetail key="01" />,
-  <ItemDetail key="01" />,
-  <ItemDetail key="01" />,
-  <ItemDetail key="01" />,
-];
+const itemDetail = new Array(10);
+for (let i = 0; i < itemDetail.length; i += 1) {
+  itemDetail[i] = <ItemDetail />;
+}
 const ZingChartVPop = () => (
   <div className="zing-chart-vpop-wrapper">
     <TitleComponent titleName="Nhạc Việt Mới" fontSize="26px" />
@@ -19,7 +17,7 @@ const ZingChartVPop = () => (
       {itemDetail.map((item) => (
         <li key={item}>
           {item}
-          <Divider />
+          <Divider style={{ margin: "10px 0px" }} />
         </li>
       ))}
     </ul>

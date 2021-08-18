@@ -8,12 +8,10 @@ import ItemCover from "../../organs/ItemCoverMV";
 // others
 import "./style.scss";
 
-const itemDetail = [
-  <ItemDetail key="01" />,
-  <ItemDetail key="01" />,
-  <ItemDetail key="01" />,
-  <ItemDetail key="01" />,
-];
+const itemDetail = new Array(4);
+for (let i = 0; i < itemDetail.length; i += 1) {
+  itemDetail[i] = <ItemDetail />;
+}
 
 const ZingChartMV = () => (
   <div className="zing-chart-mv-wrapper">
@@ -28,7 +26,7 @@ const ZingChartMV = () => (
       {itemDetail.map((item) => (
         <li key={item}>
           {item}
-          <Divider></Divider>
+          <Divider style={{ margin: "10px 0px" }} />
         </li>
       ))}
     </ul>
