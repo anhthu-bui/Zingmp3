@@ -10,8 +10,8 @@ const SongRakingList = () => (
     style={{ backgroundImage: `url(${songrakingImage})` }}
   >
     <ul className="song-raking-top">
-      {new Array(3).fill(<ItemSongRakingTop />).map((item) => (
-        <li key={item}>{item}</li>
+      {[...new Array(3).keys()].map((key) => (
+        <li key={key}><ItemSongRakingTop /></li>
       ))}
     </ul>
   </div>
