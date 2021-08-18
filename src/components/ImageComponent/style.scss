@@ -22,10 +22,11 @@
         &:hover {
             opacity: 0.75;
             .show {
-                display: block;
+                display: inline-flex;
                 position: absolute;
-                top: 30px;
-                left: 45px;
+                top: 35%;
+                left: 35%;
+                font-size: 30px;
                 color: white;
             }   
         }

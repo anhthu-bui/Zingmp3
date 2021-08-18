@@ -20,7 +20,6 @@ const IconListComponent = () => (
         {item}
       </a>
     ))}
-    ;
   </div>
 );
 

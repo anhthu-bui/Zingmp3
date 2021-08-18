@@ -1,0 +1,14 @@
+.item-song-rating-wrapper {
+    display: flex;
+    .item-song-rating-info {
+        display: flex;
+        width: 60%;
+    }
+    .song-rating-tool {
+        top: 50%;
+    }
+    .song-rating-icon {
+        padding: 20px;
+        font-weight: 100;
+    }
+}
