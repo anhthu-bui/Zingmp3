@@ -6,7 +6,7 @@ import { PlayCircleOutlined } from "@ant-design/icons";
 import "./style.scss";
 
 const ImageComponent = ({ image, ranking, width, height, cover }) => (
-  <div className="image-wrapper">
+  <div className={classNames("image-wrapper", { rankingWrapper: !image })}>
     <a href="/" className="image-wrapper-inner">
       <img src={image} style={{ width, height }} />
       <span className={classNames("raking_number", { ranking: !image })}>

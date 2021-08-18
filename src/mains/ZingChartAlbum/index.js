@@ -23,7 +23,7 @@ const ZingChartAlbum = () => (
       {itemDetail.map((item) => (
         <li key={item}>
           {item}
-          <Divider />
+          <Divider style={{ margin: "10px 0px" }} />
         </li>
       ))}
     </ul>

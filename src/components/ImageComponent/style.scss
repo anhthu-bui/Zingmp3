@@ -1,5 +1,8 @@
 .image-wrapper{
-    margin-right: 40px;
+    margin: 10px 20px 0px 0px;
+    &.rankingWrapper {
+        margin-right: 40px;
+    }
     &-inner{
         position: relative;
         display: block;

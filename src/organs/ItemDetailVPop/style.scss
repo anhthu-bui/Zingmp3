@@ -6,4 +6,12 @@
     .item-detail-information {
         margin-left: 100px;
     }
+    .icon-list {
+        display: none;
+    }
+    &:hover {
+        .icon-list{
+            display: block;
+        }
+    }
 }

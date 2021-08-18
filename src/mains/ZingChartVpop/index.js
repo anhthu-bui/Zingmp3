@@ -8,9 +8,15 @@ import "./style.scss";
 
 const itemDetail = [
   <ItemDetail key="01" />,
-  <ItemDetail key="01" />,
-  <ItemDetail key="01" />,
-  <ItemDetail key="01" />,
+  <ItemDetail key="02" />,
+  <ItemDetail key="03" />,
+  <ItemDetail key="04" />,
+  <ItemDetail key="05" />,
+  <ItemDetail key="06" />,
+  <ItemDetail key="07" />,
+  <ItemDetail key="08" />,
+  <ItemDetail key="09" />,
+  <ItemDetail key="10" />,
 ];
 const ZingChartVPop = () => (
   <div className="zing-chart-vpop-wrapper">
@@ -19,7 +25,7 @@ const ZingChartVPop = () => (
       {itemDetail.map((item) => (
         <li key={item}>
           {item}
-          <Divider />
+          <Divider style={{ margin: "10px 0px" }} />
         </li>
       ))}
     </ul>
