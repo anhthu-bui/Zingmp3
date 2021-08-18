@@ -7,12 +7,10 @@ import ItemCover from "../../organs/ItemCoverNew";
 // others
 import "./style.scss";
 
-const itemDetail = [
-  <ItemDetail key="01" />,
-  <ItemDetail key="01" />,
-  <ItemDetail key="01" />,
-  <ItemDetail key="01" />,
-];
+const itemDetail = new Array(4);
+for (let i = 0; i < itemDetail.length; i += 1) {
+  itemDetail[i] = <ItemDetail />;
+}
 const ZingChartNew = () => (
   <div className="zing-chart-news-wrapper">
     <TitleComponent titleName="Tin tức âm nhạc" fontSize="18px" />
