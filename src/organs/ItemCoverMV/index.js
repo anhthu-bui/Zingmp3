@@ -8,7 +8,7 @@ const ItemCoverMV = () => (
   <div className="item-cover-mv-wrapper">
     <ImageComponent
       image={imgCover}
-      width="350px"
+      width="320px"
       height="125px"
       ranking="01"
     />

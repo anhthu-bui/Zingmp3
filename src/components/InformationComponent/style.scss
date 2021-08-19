@@ -5,18 +5,35 @@
         color: purple;
     }
     .information-name {
-        font-size: 14px;
         margin-bottom: 0px;
         a{
+            padding-right: 5px;
+            text-overflow: ellipsis;
+            word-break: break-word;
             color: black;
+            text-indent: 100%;
+            overflow: hidden;
             &:hover{
                 color: purple;
+            }
+        }
+        &.songRating {
+            a{
+                text-overflow: ellipsis;
+                word-break: break-word;
+                color: white;
+                text-indent: 100%;
+                &:hover{
+                    color: purple;
+                }
             }
         }
     }
     .information-singer {
         font-size: 12px;
         a{
+            text-overflow: ellipsis;
+            word-break: break-word;
             color: #888;
             &:hover{
                 color: purple;

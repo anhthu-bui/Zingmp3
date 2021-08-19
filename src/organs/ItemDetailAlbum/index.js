@@ -8,7 +8,7 @@ import img1 from "../../images/img1.jpeg";
 const ItemDetailAlbum = () => (
   <div className="item-detail-album-wrapper">
     <ImageComponent image={img1} width="110px" ranking="01" cover="true" />
-    <InformationComponent name="Một phút" singer="Khởi My" />
+    <InformationComponent name="Một phút" singer="Khởi My" fontSize="14px" />
   </div>
 );
 export default ItemDetailAlbum;

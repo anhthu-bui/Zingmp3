@@ -1,0 +1,19 @@
+.song-raking-top-wrapper {
+    height: 280px;
+    .song-raking-top {
+        display: flex;
+        padding: 210px 10px 0px 10px;
+        li {
+            margin-right: 10px;
+            width: 35%;
+            padding-left: 10px;
+            padding-right: 10px;
+            list-style: none;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.15);
+                opacity: 0.75;
+            }
+        }
+    }
+}
