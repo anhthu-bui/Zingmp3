@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Zingmp3/static/css/main.4b238aa2.chunk.css",
-    "main.js": "/Zingmp3/static/js/main.bf2b6aa7.chunk.js",
-    "main.js.map": "/Zingmp3/static/js/main.bf2b6aa7.chunk.js.map",
-    "runtime-main.js": "/Zingmp3/static/js/runtime-main.1eca044f.js",
-    "runtime-main.js.map": "/Zingmp3/static/js/runtime-main.1eca044f.js.map",
+    "main.css": "/Zingmp3/static/css/main.635b8c7c.chunk.css",
+    "main.js": "/Zingmp3/static/js/main.13ead84c.chunk.js",
+    "main.js.map": "/Zingmp3/static/js/main.13ead84c.chunk.js.map",
+    "runtime-main.js": "/Zingmp3/static/js/runtime-main.fd3a70f3.js",
+    "runtime-main.js.map": "/Zingmp3/static/js/runtime-main.fd3a70f3.js.map",
     "static/css/2.630ef54a.chunk.css": "/Zingmp3/static/css/2.630ef54a.chunk.css",
-    "static/js/2.7a14dabd.chunk.js": "/Zingmp3/static/js/2.7a14dabd.chunk.js",
-    "static/js/2.7a14dabd.chunk.js.map": "/Zingmp3/static/js/2.7a14dabd.chunk.js.map",
-    "static/js/3.ffbad573.chunk.js": "/Zingmp3/static/js/3.ffbad573.chunk.js",
-    "static/js/3.ffbad573.chunk.js.map": "/Zingmp3/static/js/3.ffbad573.chunk.js.map",
+    "static/js/2.9d77430e.chunk.js": "/Zingmp3/static/js/2.9d77430e.chunk.js",
+    "static/js/2.9d77430e.chunk.js.map": "/Zingmp3/static/js/2.9d77430e.chunk.js.map",
+    "static/js/3.f20b5173.chunk.js": "/Zingmp3/static/js/3.f20b5173.chunk.js",
+    "static/js/3.f20b5173.chunk.js.map": "/Zingmp3/static/js/3.f20b5173.chunk.js.map",
     "index.html": "/Zingmp3/index.html",
     "static/css/2.630ef54a.chunk.css.map": "/Zingmp3/static/css/2.630ef54a.chunk.css.map",
-    "static/css/main.4b238aa2.chunk.css.map": "/Zingmp3/static/css/main.4b238aa2.chunk.css.map",
-    "static/js/2.7a14dabd.chunk.js.LICENSE.txt": "/Zingmp3/static/js/2.7a14dabd.chunk.js.LICENSE.txt",
+    "static/css/main.635b8c7c.chunk.css.map": "/Zingmp3/static/css/main.635b8c7c.chunk.css.map",
+    "static/js/2.9d77430e.chunk.js.LICENSE.txt": "/Zingmp3/static/js/2.9d77430e.chunk.js.LICENSE.txt",
     "static/media/ben-thanh_partner.53bb8dbd.jpeg": "/Zingmp3/static/media/ben-thanh_partner.53bb8dbd.jpeg",
     "static/media/icon_zingmp3.894e61cf.png": "/Zingmp3/static/media/icon_zingmp3.894e61cf.png",
     "static/media/img1.694bc85e.jpeg": "/Zingmp3/static/media/img1.694bc85e.jpeg",
@@ -38,10 +38,10 @@
     "static/media/vcpmc_partner.41d60443.jpeg": "/Zingmp3/static/media/vcpmc_partner.41d60443.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1eca044f.js",
+    "static/js/runtime-main.fd3a70f3.js",
     "static/css/2.630ef54a.chunk.css",
-    "static/js/2.7a14dabd.chunk.js",
-    "static/css/main.4b238aa2.chunk.css",
-    "static/js/main.bf2b6aa7.chunk.js"
+    "static/js/2.9d77430e.chunk.js",
+    "static/css/main.635b8c7c.chunk.css",
+    "static/js/main.13ead84c.chunk.js"
   ]
 }
