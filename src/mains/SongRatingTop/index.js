@@ -11,7 +11,9 @@ const SongRakingList = () => (
   >
     <ul className="song-raking-top">
       {[...new Array(3).keys()].map((key) => (
-        <li key={key}><ItemSongRakingTop /></li>
+        <li key={key}>
+          <ItemSongRakingTop />
+        </li>
       ))}
     </ul>
   </div>
