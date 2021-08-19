@@ -17,7 +17,6 @@ module.exports = {
     "react/react-in-jsx-scope": "off",
     "import/prefer-default-export": "off",
     "import/no-duplicates": "off",
-    "no-console": "off",
     "import/extensions": [
       "error",
       "never",
