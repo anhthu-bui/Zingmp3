@@ -1,7 +1,12 @@
+// contexts
+import { useLocale } from "../../contexts/LocaleContexts";
+
+const { dictionary } = useLocale();
+
 const menuTop = [
   {
     id: "menu00",
-    name: "Nhạc Của Tôi",
+    name: dictionary("nhaccuatoi"),
   },
   {
     id: "menu01",
