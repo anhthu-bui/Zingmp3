@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Zingmp3/static/css/main.635b8c7c.chunk.css",
+    "main.css": "/Zingmp3/static/css/main.76d0c438.chunk.css",
     "main.js": "/Zingmp3/static/js/main.13ead84c.chunk.js",
     "main.js.map": "/Zingmp3/static/js/main.13ead84c.chunk.js.map",
     "runtime-main.js": "/Zingmp3/static/js/runtime-main.fd3a70f3.js",
@@ -12,7 +12,7 @@
     "static/js/3.f20b5173.chunk.js.map": "/Zingmp3/static/js/3.f20b5173.chunk.js.map",
     "index.html": "/Zingmp3/index.html",
     "static/css/2.630ef54a.chunk.css.map": "/Zingmp3/static/css/2.630ef54a.chunk.css.map",
-    "static/css/main.635b8c7c.chunk.css.map": "/Zingmp3/static/css/main.635b8c7c.chunk.css.map",
+    "static/css/main.76d0c438.chunk.css.map": "/Zingmp3/static/css/main.76d0c438.chunk.css.map",
     "static/js/2.9d77430e.chunk.js.LICENSE.txt": "/Zingmp3/static/js/2.9d77430e.chunk.js.LICENSE.txt",
     "static/media/ben-thanh_partner.53bb8dbd.jpeg": "/Zingmp3/static/media/ben-thanh_partner.53bb8dbd.jpeg",
     "static/media/icon_zingmp3.894e61cf.png": "/Zingmp3/static/media/icon_zingmp3.894e61cf.png",
@@ -41,7 +41,7 @@
     "static/js/runtime-main.fd3a70f3.js",
     "static/css/2.630ef54a.chunk.css",
     "static/js/2.9d77430e.chunk.js",
-    "static/css/main.635b8c7c.chunk.css",
+    "static/css/main.76d0c438.chunk.css",
     "static/js/main.13ead84c.chunk.js"
   ]
 }
