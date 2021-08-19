@@ -1,26 +1,28 @@
 // libs
-import { createContext, useContext } from "react";
+import { useState, createContext, useContext } from "react";
 import PropTypes from "prop-types";
-// hooks
-import useLocalStorage from "../hooks/useLocaleStorage";
 // locales
-import { dictionaryList } from "../locales";
+import { locales } from "../locales";
 
 const LocaleContext = createContext();
 
 export const ProvideLocale = ({ children }) => {
-  const [locale, setLocale] = useLocalStorage("locale", "vi");
-
+  const [locale, setLocale] = useState("vi");
   return (
     <LocaleContext.Provider
-      value={{ locale, setLocale, dictionary: dictionaryList[locale] }}
+      value={{
+        locale,
+        setLocale,
+        localeDataSource: locales[locale],
+      }}
     >
       {children}
     </LocaleContext.Provider>
   );
 };
+
+export const useLocale = () => useContext(LocaleContext);
+
 ProvideLocale.propTypes = {
   children: PropTypes.string,
 };
-
-export const useLocale = () => useContext(LocaleContext);

@@ -9,7 +9,7 @@ import { menuTop } from "../../dataSources/Menu";
 import "./style.scss";
 
 const NavBar = () => {
-  const { locale, setLocale, dictionary } = useLocale();
+  const { locale, setLocale, localeDataSource } = useLocale();
   return (
     <div className="navbar-wrapper">
       <Row className="navbar-wrapper-inner">
@@ -22,7 +22,7 @@ const NavBar = () => {
             </li>
             {menuTop.map((item) => (
               <li key={item.id}>
-                <a href="/">{item.name}</a>
+                <a href="/">{localeDataSource[item.name]}</a>
               </li>
             ))}
           </ul>
@@ -34,12 +34,16 @@ const NavBar = () => {
           <a href="#" className="upload">
             <UpCircleFilled style={{ fontSize: "20px", color: "#a845de;" }} />
           </a>
+          <select
+            className="select-change-locale"
+            defaultValue={locale}
+            onChange={(e) => setLocale(e.target.value)}
+          >
+            <option value="vi">{localeDataSource.vi}</option>
+            <option value="en">{localeDataSource.en}</option>
+          </select>
         </Col>
       </Row>
-      <select defaultValue={locale} onChange={(e) => setLocale(e.target.value)}>
-        <option value="vi">{dictionary.vi}</option>
-        <option value="en">{dictionary.en}</option>
-      </select>
     </div>
   );
 };

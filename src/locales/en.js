@@ -8,7 +8,7 @@ const en = {
   nghesi: "Singer",
   VIP: "VIP",
   tatquangcao: "Turn off ads",
-  tiengviet: "vi",
-  english: "en",
+  vi: "Tiếng Việt",
+  en: "English",
 };
 export default en;
