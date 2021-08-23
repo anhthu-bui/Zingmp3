@@ -1,8 +1,19 @@
 .hot-singer-wrapper {
     grid-column: 1 / 2;
     grid-row: 14 / 16;
-    background-color: #AA0000;
-    font-size: 20px;
-    text-align: center;
-    color: white;
+    &-inner {
+        .hot-singer-list {
+            display: flex;
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                padding-left: 5px;
+                list-style: none;
+                li {
+                    width: 22%;
+                    margin: 0px 5px 11px 5px;
+                }
+            }
+        }
+    }
 }
