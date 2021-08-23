@@ -13,7 +13,6 @@ const PaginationComponent = ({ pagination, onPageChange }) => {
       onPageChange(newPage);
     }
   };
-  console.log(page);
 
   return (
     <div className="pagination-wrapper">
