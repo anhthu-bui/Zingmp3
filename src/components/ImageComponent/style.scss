@@ -1,5 +1,11 @@
 .image-wrapper{
-    margin: 10px 20px 0px 0px;
+    margin: 10px 10px 0px 0px;
+    a {
+        color: inherit;
+        &:hover{
+            color: inherit;
+        }
+    }
     &.rankingWrapper {
         margin-right: 40px;
     }
@@ -12,21 +18,21 @@
             left: 2px;
             z-index: 1;
             margin-right: "40px";
-            color: "white";
-            .ranking{
-                @extend .raking_number;
-                margin-right: "50px";
-                color: "black";
+            font-size: 20px;
+            &.ranking{
+                margin: "20px 50px 0px 0px";
+                font-size: 20px;
             }
         }
         &:hover {
-            opacity: 0.75;
+            opacity: 0.8;
             .show {
                 display: block;
                 position: absolute;
-                top: 35%;
-                left: 35%;
-                font-size: 30px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 35px;
                 color: white;
             }   
         }

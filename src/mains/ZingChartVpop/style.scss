@@ -1,11 +1,18 @@
 .zing-chart-vpop-wrapper {
     grid-column: 1 / 2;
     grid-row: 11 / 14;
-    margin-left: 350px;
-    .vpop-list {
-        li {
-            margin-top: -15px;
-            margin-bottom: -15px;
+    margin-left: 300px;
+    .vpop {
+        padding-left: 12px;
+        border-left: 1px solid #dedede;
+        ul {
+            padding: 0px;
+            list-style: none;
+            li {
+                height: 70px;
+                padding-bottom: 16px;
+                border-bottom: 1px solid #f2f2f2;
+            }
         }
     }
 }

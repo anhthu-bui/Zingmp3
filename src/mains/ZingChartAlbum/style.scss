@@ -1,11 +1,13 @@
 .zing-chart-album-wrapper {
     grid-column: 2 / 3;
     grid-row: 9 / 12;
-    width: 100%;
-    font-size: 20px;
-    text-align: center;
-    color: white;
-    li {
-        margin-bottom: 10px;
+    .zing-chart-album {
+        padding: 0px;
+        list-style: none;
+        li {
+            height: 70px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #f2f2f2;
+        }
     }
 }

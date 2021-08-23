@@ -1,10 +1,14 @@
 .item-detail-song-wrapper {
     display: flex;
-    margin-left: -40px;
-    margin-top: 10px;
-    margin-bottom: 10px;
     .item-detail-information {
-        margin-left: 100px;
+        margin-top: 5px;
+        width: 150px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .song-img {
+        line-height: 50px;
     }
     .icon-list {
         display: none;
@@ -12,6 +16,8 @@
     &:hover {
         .icon-list{
             display: block;
+            margin-left: 40%;
+            line-height: 50px;
         }
     }
 
