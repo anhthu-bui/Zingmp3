@@ -1,5 +1,7 @@
 // components
 import ItemSongRakingTop from "../../organs/ItemSongRakingTop";
+// mocks
+import dataSongRating from "../../mock/SongRatingTop";
 // others
 import "./style.scss";
 import songrakingImage from "../../images/song_ranking.png";
@@ -10,8 +12,17 @@ const SongRakingList = () => (
     style={{ backgroundImage: `url(${songrakingImage})` }}
   >
     <ul className="song-raking-top">
-      {[...new Array(3).keys()].map((key) => (
-        <li key={key}><ItemSongRakingTop /></li>
+      {dataSongRating.map((item) => (
+        <li key={item.id}>
+          <ItemSongRakingTop
+            name={item.name}
+            rank={item.rank}
+            singer={item.singer}
+            img={item.img}
+            number={item.number}
+            percent={item.percent}
+          />
+        </li>
       ))}
     </ul>
   </div>

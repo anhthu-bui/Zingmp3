@@ -1,9 +1,10 @@
 .icon-list-wrapper {
-    margin: 10px 0px 0px 100px;
+    display: flex;
     a {
         padding: 5px;
         color: gray;
-        font-size: 20px;
+        font-size: 16px;
+        font-weight: bold;
         &:hover{
             color: purple;
             opacity: 0.75;

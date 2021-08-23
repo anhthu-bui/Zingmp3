@@ -1,11 +1,15 @@
 .information-wrapper {
-    margin-top: 10px;
+    margin-top: 5px;
     text-align: left;
+    a {
+        color: inherit;
+    }
     a:hover {
         color: purple;
     }
     .information-name {
         margin-bottom: 0px;
+        line-height: normal;
         a{
             padding-right: 5px;
             text-overflow: ellipsis;
@@ -13,6 +17,8 @@
             color: black;
             text-indent: 100%;
             overflow: hidden;
+            font-family: "Roboto","segoe ui",Helvetica,Arial,sans-serif;
+            font-weight: 400;
             &:hover{
                 color: purple;
             }
@@ -31,6 +37,7 @@
     }
     .information-singer {
         font-size: 12px;
+        line-height: normal;
         a{
             text-overflow: ellipsis;
             word-break: break-word;

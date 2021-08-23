@@ -1,14 +1,20 @@
+// libs
+import PropTypes from "prop-types";
 // components
 import ImageComponent from "../../components/ImageComponent";
 import InformationComponent from "../../components/InformationComponent";
 // others
 import "./style.scss";
-import imgVideo from "../../images/img_mv1.jpeg";
 
-const ItemVideo = () => (
+const ItemVideo = ({ name, singer, img }) => (
   <div className="item-video-wrapper">
-    <ImageComponent image={imgVideo} width="150px" cover="true" />
-    <InformationComponent name="Em Hứa Thế Nào" singer="Như Việt, ACA" />
+    <ImageComponent image={img} width="140px" height="auto" cover="true" />
+    <InformationComponent name={name} singer={singer} fontSize="14px" />
   </div>
 );
+ItemVideo.propTypes = {
+  name: PropTypes.string,
+  img: PropTypes.string,
+  singer: PropTypes.string,
+};
 export default ItemVideo;

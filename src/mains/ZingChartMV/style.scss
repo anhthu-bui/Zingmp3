@@ -1,7 +1,13 @@
 .zing-chart-mv-wrapper {
     grid-column: 2 / 3;
     grid-row: 6 / 9;
-    font-size: 20px;
-    text-align: center;
-    color: white;
+    .zing-chart-mv {
+        padding: 0px;
+        list-style: none;
+        li {
+            height: 70px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #f2f2f2;
+        }
+    }
 }
