@@ -1,27 +1,20 @@
-// libs
-import React, { useState } from "react";
 // components
 import TitleComponent from "../../components/TitleComponent";
 import ItemAlbum from "../../organs/ItemAlbumHot";
 import PaginationComponent from "../../components/PaginationComponent";
 // mocks
 import dataAlbumHot from "../../mocks/AlbumHot";
+// hooks
+import usePagination from "../../hooks/usePagination";
 // others
 import "./style.scss";
 
 const AlbumHot = () => {
-  const [pagination, setPagination] = useState({
+  const { start, end, pagination, handlePageChange } = usePagination({
     page: 1,
     limit: 12,
     total: dataAlbumHot.length,
   });
-
-  const handlePageChange = (newpage) => {
-    setPagination({ ...pagination, page: (pagination.page = newpage) });
-  };
-
-  const start = pagination.page * pagination.limit - pagination.limit;
-  const end = start + pagination.limit;
 
   return (
     <div className="album-hot-wrapper">

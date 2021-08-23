@@ -8,18 +8,19 @@ import "./style.scss";
 const PaginationComponent = ({ pagination, onPageChange }) => {
   const { page, limit, total } = pagination;
   const totalPage = Math.ceil(total / limit);
-  const HandlePageChange = (newPage) => {
+  const handlePageChange = (newPage) => {
     if (onPageChange) {
       onPageChange(newPage);
     }
   };
+  console.log(page);
 
   return (
     <div className="pagination-wrapper">
       <Button
         className="btn-pre"
         disabled={page === 1}
-        onClick={() => HandlePageChange(page - 1)}
+        onClick={() => handlePageChange(page - 1)}
       >
         <LeftOutlined />
       </Button>
@@ -29,7 +30,7 @@ const PaginationComponent = ({ pagination, onPageChange }) => {
       <Button
         className="btn-next"
         disabled={page >= totalPage}
-        onClick={() => HandlePageChange(page + 1)}
+        onClick={() => handlePageChange(page + 1)}
       >
         <RightOutlined />
       </Button>
