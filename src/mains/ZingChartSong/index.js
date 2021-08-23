@@ -2,7 +2,6 @@
 import TitleComponent from "../../components/TitleComponent";
 import ItemDetail from "../../organs/ItemDetailSong";
 import MenuZingChartComponent from "../../components/MenuZingChartComponent";
-// import ItemCoverSong from "../../organs/ItemCoverSong";
 import ImageCoverComponent from "../../components/ImageCoverComponent";
 // mock
 import zingChartSong from "../../mock/ZingChartSong";
