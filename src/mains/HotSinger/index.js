@@ -21,7 +21,7 @@ const ItemHotSinger = () => (
             height="210px"
           />
         </div>
-        <ul className="">
+        <ul>
           {dataSinger.map((item) => (
             <li key={item.id}>
               <SingerComponent

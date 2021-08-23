@@ -1,6 +1,10 @@
 .item-detail-song-wrapper {
     display: flex;
+    position: relative;
     .item-detail-information {
+        position: absolute;
+        left: 15%;
+        z-index: 1;
         margin-top: 5px;
         width: 150px;
         overflow: hidden;
@@ -16,7 +20,8 @@
     &:hover {
         .icon-list{
             display: block;
-            margin-left: 40%;
+            position: absolute;
+            margin-left: 75%;
             line-height: 50px;
         }
     }

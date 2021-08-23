@@ -1,9 +1,13 @@
 .item-detail-vpop-wrapper {
     display: flex;
+    position: relative;
     .vpop-img {
         width: 30%;
     }
     .item-detail-information {
+        position: absolute;
+        left: 20%;
+        z-index: 1;
         width: 150px;
         overflow: hidden;
         white-space: nowrap;
@@ -17,7 +21,8 @@
     &:hover {
         .icon-list{
             display: block;
-            margin-left: 20%;
+            position: absolute;
+            margin-left: 75%;
         }
     }
 }
