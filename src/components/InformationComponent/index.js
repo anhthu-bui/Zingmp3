@@ -5,9 +5,11 @@ import PropTypes from "prop-types";
 import "./style.scss";
 
 const InformationComponent = ({ name, singer, fontSize, color }) => (
-  <div className="information-wrapper" style={{ fontSize }}>
+  <div className="information-wrapper">
     <h3 className={classNames("information-name", { songRating: color })}>
-      <a href="/">{name}</a>
+      <a href="/" style={{ fontSize }}>
+        {name}
+      </a>
     </h3>
     <div className="information-singer">
       <a href="/">{singer}</a>

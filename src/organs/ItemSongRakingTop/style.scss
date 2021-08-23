@@ -1,13 +1,42 @@
 .item-song-raking-top-wrapper {
     display: flex;
-    .number-left{
-        text-align: left;
+    height: 40px;
+    .number-left {
+        margin-left: -5px;
     }
-    .item-song-raking-info {
-        display: flex;
-        width: 60%;
+    .song-rating-img {
+        margin:-12px 0px 0px -10px;
+    }
+    .song-rating-information {
+        .song-rating-name {
+            margin-top:-10px;
+            width: 60px;
+            a{
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                word-wrap: normal;
+                font-size: 12px;
+                font-weight: 500;
+                color: #fff;
+            }
+        }
+        .song-rating-singer {
+            margin-top: -35px;
+            width: 60px;
+            a {
+                max-width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                word-wrap: normal;
+                color: #a2a2a2;
+                font-size: 9px;
+                font-weight: 500;
+            }
+        }
     }
     .number-right{
-        padding-left: 30px;
+        margin-left: 20%;
     }
 }

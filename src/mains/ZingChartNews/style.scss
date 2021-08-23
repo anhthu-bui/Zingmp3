@@ -2,10 +2,11 @@
     grid-column: 2 / 3;
     grid-row: 12 / 15;
     .list-news{
+        padding-left: 40px;
+        list-style: none;
         li {
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #f2f2f2;
         }
     }
 }

@@ -1,0 +1,58 @@
+.image-cover-wrapper {
+    margin-top:-2px;
+    a {
+        color: inherit;
+        &:hover {
+            color: inherit;
+        }
+    }
+    &-inner {
+        position: relative;
+        display: block;
+        .rating {
+            position: absolute;
+            bottom: 7px;
+            left: 10px;
+            z-index: 1;
+            margin-right: "40px";
+            font-size: 20px;
+            &.news {
+                display: none;
+            }
+        }
+        .information-wrapper{
+            position: absolute;
+            bottom: 2px;
+            left: 40px;
+            z-index: 1;
+            margin-right: "40px";
+            .song-name {
+                margin: 0px;
+                a {
+                    text-overflow: ellipsis;
+                    word-break: break-word;
+                    color: #fff;
+                    text-indent: 100%;
+                    overflow: hidden;
+                    font-family: "Roboto","segoe ui",Helvetica,Arial,sans-serif;
+                    font-weight: 400;
+                    font-size: 14px;
+                    &:hover{
+                        color: purple;
+                    }
+                }
+            }
+            .information-singer {
+                font-size: 12px;
+                a{
+                    text-overflow: ellipsis;
+                    word-break: break-word;
+                    color: #fff;
+                    &:hover{
+                        color: purple;
+                    }
+                }
+            }
+        }
+    }
+}

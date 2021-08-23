@@ -1,17 +1,14 @@
-// libs
-import { Divider } from "antd";
 // components
 import TitleComponent from "../../components/TitleComponent";
 import ItemDetail from "../../organs/ItemDetailMV";
 import MenuZingChartComponent from "../../components/MenuZingChartComponent";
-import ItemCover from "../../organs/ItemCoverMV";
+import ImageCoverComponent from "../../components/ImageCoverComponent";
+// mocks
+import dataMV from "../../mock/ZingChart_MV";
+// images
+import zingchartCover from "../../images/zingchart_mv_cover.jpeg";
 // others
 import "./style.scss";
-
-const itemDetail = new Array(4);
-for (let i = 0; i < itemDetail.length; i += 1) {
-  itemDetail[i] = <ItemDetail />;
-}
 
 const ZingChartMV = () => (
   <div className="zing-chart-mv-wrapper">
@@ -21,12 +18,21 @@ const ZingChartMV = () => (
       iconPlay="true"
     />
     <MenuZingChartComponent />
-    <ItemCover />
-    <ul>
-      {itemDetail.map((item) => (
+    <ImageCoverComponent
+      image={zingchartCover}
+      rating="01"
+      name="Em Quá Khờ Dại"
+      singer="Nguyễn Thạc Bảo Ngọc"
+    />
+    <ul className="zingchart-mv">
+      {dataMV.map((item) => (
         <li key={item}>
-          {item}
-          <Divider style={{ margin: "10px 0px" }} />
+          <ItemDetail
+            name={item.name}
+            singer={item.singer}
+            rank={item.rank}
+            img={item.img}
+          />
         </li>
       ))}
     </ul>

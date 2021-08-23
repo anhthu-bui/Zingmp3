@@ -1,7 +1,13 @@
 .zing-chart-song-wrapper {
     grid-column: 2 / 3;
     grid-row: 4 / 6;
-    font-size: 20px;
-    text-align: center;
-    color: white;
+    .song-list {
+        padding: 0px;
+        list-style: none;
+        li {
+            height: 70px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #f2f2f2;
+        }
+    }
 }

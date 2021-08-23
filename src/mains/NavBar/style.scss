@@ -1,42 +1,51 @@
 .navbar-wrapper {
     background-color: #e4e4e4;
     &-inner {
-        max-height: 40px;
-        padding-left: 160px;
-        padding-right: 160px;
+        display: flex;
+        width: 1000px;
+        margin: 0 auto;
+        height: 40px;
         line-height: 40px;
         .menu-navbar {
-            display: block;
-            li {
-                list-style: none;
-                float: left;
-                a {
-                    display: block;
-                    height: 40px;
-                    padding: 0px 15px 0px 15px;
+            width: 70%;
+            ul {
+                height: 40px;
+                margin: 0px;
+                padding: 0px;
+                li {
+                    display: inline-block;
+                    margin-top: -15px;
+                    list-style: none;
                     line-height: 40px;
-                    font-weight: 400;
-                    color: black;
+                    a {
+                        display: flex;
+                        height: 40px;
+                        padding: 0px 15px 0px 15px;
+                        line-height: 40px;
+                        font-weight: 400;
+                        color: black;
+                        &:hover{
+                            background-color:white;
+                            color: #a845de;
+                        }
+                    }
+                } 
+                .icon-home {
                     &:hover{
-                        background-color:white;
-                        color: #a845de;
+                        background-color: #e4e4e4;
+                        color: black;
                     }
                 }
-            } 
-            .icon-home {
-                &:hover{
-                    background-color: #e4e4e4;
-                    color: black;
-                }
             }
+            
+        }
+        .select-change-locale {
+           margin-right: 20px;
         }
     
         .navbar-right {
-            display: block;
             .turn-off-ads{
-                float: left;
-                padding-left: 170px;
-                padding-right: 0px;
+                margin-right: 20px;
                 color: black;
                 &:hover{
                     background-color: #e4e4e4;
@@ -44,9 +53,7 @@
                 }
             }
             .upload{
-                float: right;
-                padding-right: 40px;
-                padding-left: 0px;
+                font-size: 20px;
                 color: #a845de;
                 &:hover{
                     opacity: 0.75;

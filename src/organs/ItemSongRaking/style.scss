@@ -2,13 +2,14 @@
     display: flex;
     .item-song-rating-info {
         display: flex;
-        width: 60%;
+        margin-top: -12px;
     }
     .song-rating-tool {
-        top: 50%;
+        margin-left:auto;
+        margin-top: 10px;
     }
     .song-rating-icon {
-        padding: 20px;
+        padding: 10px 30px 0px 10px;
         font-weight: 100;
     }
 }

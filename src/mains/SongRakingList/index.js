@@ -1,17 +1,22 @@
-// libs
-import { Divider } from "antd";
 // components
 import ItemSongRaking from "../../organs/ItemSongRaking";
+// mocks
+import dataSongRating from "../../mock/SongRating";
 // others
 import "./style.scss";
 
 const SongRakingList = () => (
   <div className="song-raking-list-wrapper">
     <ul className="song-raking-list">
-      {[...new Array(5).keys()].map((key) => (
-        <li key={key}>
-          <ItemSongRaking />
-          <Divider style={{ margin: "10px 0px" }} />
+      {dataSongRating.map((item) => (
+        <li key={item.id}>
+          <ItemSongRaking
+            name={item.name}
+            rank={item.rank}
+            singer={item.singer}
+            img={item.img}
+            number={item.number}
+          />
         </li>
       ))}
     </ul>

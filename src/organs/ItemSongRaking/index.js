@@ -1,4 +1,5 @@
 // libs
+import PropTypes from "prop-types";
 import { MinusOutlined } from "@ant-design/icons";
 // components
 import ImageComponent from "../../components/ImageComponent";
@@ -7,23 +8,29 @@ import IconListComponent from "../../components/IconListComponent";
 import NumberComponent from "../../components/NumberComponent";
 // others
 import "./style.scss";
-import img1 from "../../images/img3.jpeg";
 
-const ItemSongRating = () => (
+const ItemSongRating = ({ name, singer, img, rank, number }) => (
   <div className="item-song-rating-wrapper">
     <div className="number">
-      <NumberComponent rank="1" color="#D8541C" fontSize="24px" />
+      <NumberComponent rank={rank} number={number} fontSize="20px" />
     </div>
     <div className="song-rating-icon">
       <MinusOutlined />
     </div>
     <div className="item-song-rating-info">
-      <ImageComponent image={img1} width="60px" height="60px" cover="true" />
-      <InformationComponent name="Một phút" singer="Khởi My" fontSize="14px" />
+      <ImageComponent image={img} width="60px" height="60px" cover="true" />
+      <InformationComponent name={name} singer={singer} fontSize="14px" />
     </div>
     <div className="song-rating-tool">
       <IconListComponent />
     </div>
   </div>
 );
+ItemSongRating.propTypes = {
+  name: PropTypes.string,
+  rank: PropTypes.string,
+  img: PropTypes.string,
+  singer: PropTypes.string,
+  number: PropTypes.string,
+};
 export default ItemSongRating;

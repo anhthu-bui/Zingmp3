@@ -1,35 +1,35 @@
 const menuTop = [
   {
     id: "menu00",
-    name: "Nhạc Của Tôi",
+    name: "nhaccuatoi",
   },
   {
     id: "menu01",
-    name: "#zingchart",
+    name: "zingchart",
   },
   {
     id: "menu02",
-    name: "Top 100",
+    name: "top100",
   },
   {
     id: "menu03",
-    name: "Chủ Đề",
+    name: "chude",
   },
   {
     id: "menu04",
-    name: "Video",
+    name: "video",
   },
   {
     id: "menu05",
-    name: "Album",
+    name: "album",
   },
   {
     id: "menu06",
-    name: "Nghệ Sĩ",
+    name: "nghesi",
   },
   {
     id: "menu07",
-    name: "VIP",
+    name: "vip",
   },
 ];
 
