@@ -4,7 +4,7 @@ import ItemDetail from "../../organs/ItemDetailSong";
 import MenuZingChartComponent from "../../components/MenuZingChartComponent";
 import ImageCoverComponent from "../../components/ImageCoverComponent";
 // mock
-import zingChartSong from "../../mock/ZingChartSong";
+import zingChartSong from "../../mocks/ZingChartSong";
 // images
 import imgCover from "../../images/img_cover1.jpeg";
 // others

@@ -5,19 +5,21 @@ import PaginationComponent from "../../components/PaginationComponent";
 // mocks
 import dataAlbumHot from "../../mocks/AlbumHot";
 // hooks
-import usePagination from "../../hooks/usePagination";
+import useHover from "../../hooks/useHover";
+import usePaginationKey from "../../hooks/usePaginationKey";
 // others
 import "./style.scss";
 
 const AlbumHot = () => {
-  const { start, end, pagination, handlePageChange } = usePagination({
+  const [hoverRef, isHovered] = useHover();
+  const { start, end, pagination, handlePageChange } = usePaginationKey({
     page: 1,
     limit: 12,
     total: dataAlbumHot.length,
+    isHover: isHovered,
   });
-
   return (
-    <div className="album-hot-wrapper">
+    <div className="album-hot-wrapper" ref={hoverRef}>
       <TitleComponent titleName="Album Hot" fontSize="26px" />
       <ul className="list-album">
         {dataAlbumHot.slice(start, end).map((item) => (

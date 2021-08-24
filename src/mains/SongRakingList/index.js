@@ -1,7 +1,7 @@
 // components
 import ItemSongRaking from "../../organs/ItemSongRaking";
 // mocks
-import dataSongRating from "../../mock/SongRating";
+import dataSongRating from "../../mocks/SongRating";
 // others
 import "./style.scss";
 
