@@ -15,6 +15,11 @@ import albumHot13 from "../images/albumhot_13.jpeg";
 import albumHot14 from "../images/albumhot_14.jpeg";
 import albumHot15 from "../images/albumhot_15.jpeg";
 import albumHot16 from "../images/albumhot_16.jpeg";
+import albumHot17 from "../images/albumhot_17.jpeg";
+import albumHot18 from "../images/albumhot_18.jpeg";
+import albumHot19 from "../images/albumhot_19.jpeg";
+import albumHot20 from "../images/albumhot_20.jpeg";
+import albumHot21 from "../images/albumhot_21.jpeg";
 
 const dataAlbumHot = [
   {
@@ -184,6 +189,36 @@ const dataAlbumHot = [
     name: "Việt Nam Cố Lên (Single)",
     singer: "Phan Đặng Trùng Dương",
     img: albumHot12,
+  },
+  {
+    id: 29,
+    name: "Tĩnh lặng (Single)",
+    singer: "Chi Dân",
+    img: albumHot17,
+  },
+  {
+    id: 30,
+    name: "Từ Khi Anh Ghé Qua (Single))",
+    singer: "K-ICM",
+    img: albumHot18,
+  },
+  {
+    id: 31,
+    name: "Yêu Thương Tan Vỡ (Single)",
+    singer: "Huy Vạc",
+    img: albumHot19,
+  },
+  {
+    id: 32,
+    name: "Những Phút Hoài Niệm (Single)",
+    singer: "D.Blue",
+    img: albumHot20,
+  },
+  {
+    id: 33,
+    name: "Trùng Dương (Remake Version) (Single)",
+    singer: "Long Nón Lá",
+    img: albumHot21,
   },
 ];
 export default dataAlbumHot;

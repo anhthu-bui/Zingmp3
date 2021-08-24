@@ -4,7 +4,7 @@ import ItemDetail from "../../organs/ItemDetailVPop";
 // others
 import "./style.scss";
 // dataSources
-import dataVpop from "../../mock/VPop";
+import dataVpop from "../../mocks/VPop";
 
 const ZingChartVPop = () => (
   <div className="zing-chart-vpop-wrapper">

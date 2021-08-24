@@ -2,7 +2,7 @@
 import TitleComponent from "../../components/TitleComponent";
 import ItemVideo from "../../organs/ItemVideoHot";
 // mocks
-import dataVideoHot from "../../mock/VideoHot";
+import dataVideoHot from "../../mocks/VideoHot";
 // others
 import "./style.scss";
 

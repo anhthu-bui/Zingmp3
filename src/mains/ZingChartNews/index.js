@@ -3,7 +3,7 @@ import TitleComponent from "../../components/TitleComponent";
 import ItemDetail from "../../organs/ItemDetailNew";
 import ImageCoverComponent from "../../components/ImageCoverComponent";
 // mocks
-import dataNews from "../../mock/News";
+import dataNews from "../../mocks/News";
 // images
 import zingchartCover from "../../images/new_cover.jpeg";
 // others
