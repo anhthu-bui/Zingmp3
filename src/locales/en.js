@@ -6,7 +6,7 @@ const en = {
   video: "Video",
   album: "Album",
   nghesi: "Singer",
-  VIP: "VIP",
+  vip: "VIP",
   tatquangcao: "Turn off ads",
   vi: "Tiếng Việt",
   en: "English",
