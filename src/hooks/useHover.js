@@ -21,5 +21,7 @@ export default function useHover() {
     },
     [ref] // Recall only if ref changes
   );
+  console.log(ref);
+  console.log(value);
   return [ref, value];
 }

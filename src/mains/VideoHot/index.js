@@ -1,18 +1,21 @@
 // libs
+import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 // components
 import TitleComponent from "../../components/TitleComponent";
 import ItemVideo from "../../organs/ItemVideoHot";
 // actions
-import { dataVideoHot } from "../../actions/saveData";
+import { saveVideoHot } from "../../actions/saveData";
 // others
 import "./style.scss";
 
 const VideoHot = () => {
-  const disPatch = useDispatch();
+  const dispatch = useDispatch();
   const stateVideoHot = useSelector((state) => state.saveReducer.dataVideoHot);
-  const action = dataVideoHot(stateVideoHot);
-  disPatch(action);
+  const action = saveVideoHot(stateVideoHot);
+  useEffect(() => {
+    dispatch(action);
+  });
   return (
     <div className="video-hot-wrapper">
       <TitleComponent titleName="Video Hot" fontSize="26px" />

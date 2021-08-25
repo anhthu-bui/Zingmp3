@@ -1,4 +1,5 @@
 // libs
+import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 // components
 import TitleComponent from "../../components/TitleComponent";
@@ -6,19 +7,21 @@ import ItemDetail from "../../organs/ItemDetailAlbum";
 import MenuZingChartComponent from "../../components/MenuZingChartComponent";
 import ImageCoverComponent from "../../components/ImageCoverComponent";
 // actions
-import { dataZingChartAlbum } from "../../actions/saveData";
+import { saveZingChartAlbum } from "../../actions/saveData";
 // images
 import zingchartAlbumCover from "../../images/zingchart_album_cover.jpeg";
 // others
 import "./style.scss";
 
 const ZingChartAlbum = () => {
-  const disPatch = useDispatch();
+  const dispatch = useDispatch();
   const stateZingChartAlbum = useSelector(
     (state) => state.saveReducer.dataZingChartAlbum
   );
-  const action = dataZingChartAlbum(stateZingChartAlbum);
-  disPatch(action);
+  const action = saveZingChartAlbum(stateZingChartAlbum);
+  useEffect(() => {
+    dispatch(action);
+  });
   return (
     <div className="zing-chart-album-wrapper">
       <TitleComponent titleName="#ZingChart Tuần - Album" fontSize="18px" />

@@ -6,6 +6,7 @@ export default function useEventListener(eventName, isHover, handler) {
     () => {
       const isSupported = window && window.addEventListener;
       if (!isSupported) return;
+      console.log(isHover);
       if (isHover === true) {
         // Add event listener
         window.addEventListener(eventName, handler);

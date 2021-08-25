@@ -1,11 +1,12 @@
 // libs
+import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 // components
 import TitleComponent from "../../components/TitleComponent";
 import ItemPlayList from "../../organs/ItemPlayLitst";
 import PaginationComponent from "../../components/PaginationComponent";
 // actions
-import { dataPlaylist } from "../../actions/saveData";
+import { savePlaylist } from "../../actions/saveData";
 // hooks
 import useHover from "../../hooks/useHover";
 import usePaginationKey from "../../hooks/usePaginationKey";
@@ -14,9 +15,11 @@ import "./style.scss";
 
 const PlaylistHot = () => {
   const statePlaylist = useSelector((state) => state.saveReducer.dataPlaylist);
-  const disPatch = useDispatch();
-  const action = dataPlaylist(statePlaylist);
-  disPatch(action);
+  const dispatch = useDispatch();
+  const action = savePlaylist(statePlaylist);
+  useEffect(() => {
+    dispatch(action);
+  });
   // Pagination
   const [hoverRef, isHovered] = useHover();
   const { start, end, pagination, handlePageChange } = usePaginationKey({

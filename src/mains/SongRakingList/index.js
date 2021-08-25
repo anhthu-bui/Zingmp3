@@ -1,19 +1,22 @@
 // libs
+import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 // components
 import ItemSongRaking from "../../organs/ItemSongRaking";
 // actions
-import { dataSongRating } from "../../actions/saveData";
+import { saveSongRating } from "../../actions/saveData";
 // others
 import "./style.scss";
 
 const SongRakingList = () => {
-  const disPatch = useDispatch();
+  const dispatch = useDispatch();
   const stateSongRating = useSelector(
     (state) => state.saveReducer.dataSongRating
   );
-  const action = dataSongRating(stateSongRating);
-  disPatch(action);
+  const action = saveSongRating(stateSongRating);
+  useEffect(() => {
+    dispatch(action);
+  });
   return (
     <div className="song-raking-list-wrapper">
       <ul className="song-raking-list">

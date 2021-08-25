@@ -1,4 +1,5 @@
 // libs
+import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 // components
 import TitleComponent from "../../components/TitleComponent";
@@ -6,19 +7,21 @@ import ItemDetail from "../../organs/ItemDetailMV";
 import MenuZingChartComponent from "../../components/MenuZingChartComponent";
 import ImageCoverComponent from "../../components/ImageCoverComponent";
 // actions
-import { dataZingChartMV } from "../../actions/saveData";
+import { saveZingChartMV } from "../../actions/saveData";
 // images
 import zingchartCover from "../../images/zingchart_mv_cover.jpeg";
 // others
 import "./style.scss";
 
 const ZingChartMV = () => {
-  const disPatch = useDispatch();
+  const dispatch = useDispatch();
   const stateZingChartMV = useSelector(
     (state) => state.saveReducer.dataZingChartMV
   );
-  const action = dataZingChartMV(stateZingChartMV);
-  disPatch(action);
+  const action = saveZingChartMV(stateZingChartMV);
+  useEffect(() => {
+    dispatch(action);
+  });
   return (
     <div className="zing-chart-mv-wrapper">
       <TitleComponent

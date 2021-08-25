@@ -10,6 +10,8 @@ import videoHot from "../mocks/VideoHot";
 import zingChartAlbum from "../mocks/ZingChart_Album";
 import zingChartMV from "../mocks/ZingChart_MV";
 import zingChartSong from "../mocks/ZingChartSong";
+// constants
+import actionType from "../constants/actionType";
 
 const initialState = {
   dataAlbumHot: [],
@@ -25,69 +27,69 @@ const initialState = {
   dataZingChartSong: [],
 };
 
-const save = (state = initialState, action) => {
+const saveData = (state = initialState, action) => {
   switch (action.type) {
-    case "dataAlbumHot": {
+    case actionType.SAVE_ALBUM_HOT: {
       return {
         ...state,
         dataAlbumHot: AlbumHot,
       };
     }
-    case "dataVpop": {
+    case actionType.SAVE_VPOP: {
       return {
         ...state,
         dataVpop: VPop,
       };
     }
-    case "dataNews": {
+    case actionType.SAVE_NEWS: {
       return {
         ...state,
         dataNews: news,
       };
     }
-    case "dataPlaylist": {
+    case actionType.SAVE_PLAYLIST: {
       return {
         ...state,
         dataPlaylist: playList,
       };
     }
-    case "dataSinger": {
+    case actionType.SAVE_SINGER: {
       return {
         ...state,
         dataSinger: singer,
       };
     }
-    case "dataSongRating": {
+    case actionType.SAVE_SONG_RATING: {
       return {
         ...state,
         dataSongRating: songRating,
       };
     }
-    case "dataSongRatingTop": {
+    case actionType.SAVE_SONG_RATING_TOP: {
       return {
         ...state,
         dataSongRatingTop: songRatingTop,
       };
     }
-    case "dataVideoHot": {
+    case actionType.SAVE_VIDEO_HOT: {
       return {
         ...state,
         dataVideoHot: videoHot,
       };
     }
-    case "dataZingChartAlbum": {
+    case actionType.SAVE_ZINGCHART_ALBUM: {
       return {
         ...state,
         dataZingChartAlbum: zingChartAlbum,
       };
     }
-    case "dataZingChartMV": {
+    case actionType.SAVE_ZINGCHART_MV: {
       return {
         ...state,
         dataZingChartMV: zingChartMV,
       };
     }
-    case "dataZingChartSong": {
+    case actionType.SAVE_ZINGCHART_SONG: {
       return {
         ...state,
         dataZingChartSong: zingChartSong,
@@ -97,4 +99,4 @@ const save = (state = initialState, action) => {
       return state;
   }
 };
-export default save;
+export default saveData;

@@ -1,21 +1,24 @@
 // libs
+import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 // components
 import TitleComponent from "../../components/TitleComponent";
 import ItemDetail from "../../organs/ItemDetailNew";
 import ImageCoverComponent from "../../components/ImageCoverComponent";
 // actions
-import { dataNews } from "../../actions/saveData";
+import { saveNews } from "../../actions/saveData";
 // images
 import zingchartCover from "../../images/new_cover.jpeg";
 // others
 import "./style.scss";
 
 const ZingChartNew = () => {
-  const disPatch = useDispatch();
+  const dispatch = useDispatch();
   const stateNews = useSelector((state) => state.saveReducer.dataNews);
-  const action = dataNews(stateNews);
-  disPatch(action);
+  const action = saveNews(stateNews);
+  useEffect(() => {
+    dispatch(action);
+  });
   return (
     <div className="zing-chart-news-wrapper">
       <TitleComponent titleName="Tin tức âm nhạc" fontSize="18px" />

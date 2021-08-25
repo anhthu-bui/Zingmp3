@@ -1,4 +1,5 @@
 // libs
+import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 // components
 import TitleComponent from "../../components/TitleComponent";
@@ -8,15 +9,17 @@ import PaginationComponent from "../../components/PaginationComponent";
 import useHover from "../../hooks/useHover";
 import usePaginationKey from "../../hooks/usePaginationKey";
 // actions
-import { dataAlbumHot } from "../../actions/saveData";
+import { saveAlbumHot } from "../../actions/saveData";
 // others
 import "./style.scss";
 
 const AlbumHot = () => {
-  const disPatch = useDispatch();
+  const dispatch = useDispatch();
   const stateAlbumHot = useSelector((state) => state.saveReducer.dataAlbumHot);
-  const action = dataAlbumHot(stateAlbumHot);
-  disPatch(action);
+  const action = saveAlbumHot(stateAlbumHot);
+  useEffect(() => {
+    dispatch(action);
+  });
   // Pagination
   const [hoverRef, isHovered] = useHover();
   const { start, end, pagination, handlePageChange } = usePaginationKey({

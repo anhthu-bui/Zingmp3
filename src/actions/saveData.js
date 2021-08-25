@@ -1,54 +1,57 @@
-export const dataAlbumHot = (data) => ({
-  type: "dataAlbumHot",
+// constanst
+import actionType from "../constants/actionType";
+
+export const saveAlbumHot = (data) => ({
+  type: actionType.SAVE_ALBUM_HOT,
   payload: data,
 });
 
-export const dataNews = (data) => ({
-  type: "dataNews",
+export const saveNews = (data) => ({
+  type: actionType.SAVE_NEWS,
   payload: data,
 });
 
-export const dataPlaylist = (data) => ({
-  type: "dataPlaylist",
+export const savePlaylist = (data) => ({
+  type: actionType.SAVE_PLAYLIST,
   payload: data,
 });
 
-export const dataSinger = (data) => ({
-  type: "dataSinger",
+export const saveSinger = (data) => ({
+  type: actionType.SAVE_SINGER,
   payload: data,
 });
 
-export const dataVpop = (data) => ({
-  type: "dataVpop",
+export const saveVpop = (data) => ({
+  type: actionType.SAVE_VPOP,
   payload: data,
 });
 
-export const dataSongRatingTop = (data) => ({
-  type: "dataSongRatingTop",
+export const saveSongRatingTop = (data) => ({
+  type: actionType.SAVE_SONG_RATING_TOP,
   payload: data,
 });
 
-export const dataSongRating = (data) => ({
-  type: "dataSongRating",
+export const saveSongRating = (data) => ({
+  type: actionType.SAVE_SONG_RATING,
   payload: data,
 });
 
-export const dataVideoHot = (data) => ({
-  type: "dataVideoHot",
+export const saveVideoHot = (data) => ({
+  type: actionType.SAVE_VIDEO_HOT,
   payload: data,
 });
 
-export const dataZingChartAlbum = (data) => ({
-  type: "dataZingChartAlbum",
+export const saveZingChartAlbum = (data) => ({
+  type: actionType.SAVE_ZINGCHART_ALBUM,
   payload: data,
 });
 
-export const dataZingChartMV = (data) => ({
-  type: "dataZingChartMV",
+export const saveZingChartMV = (data) => ({
+  type: actionType.SAVE_ZINGCHART_MV,
   payload: data,
 });
 
-export const dataZingChartSong = (data) => ({
-  type: "dataZingChartSong",
+export const saveZingChartSong = (data) => ({
+  type: actionType.SAVE_ZINGCHART_SONG,
   payload: data,
 });

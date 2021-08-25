@@ -1,4 +1,5 @@
 // libs
+import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 // components
 import TitleComponent from "../../components/TitleComponent";
@@ -6,19 +7,21 @@ import ItemDetail from "../../organs/ItemDetailSong";
 import MenuZingChartComponent from "../../components/MenuZingChartComponent";
 import ImageCoverComponent from "../../components/ImageCoverComponent";
 // actions
-import { dataZingChartSong } from "../../actions/saveData";
+import { saveZingChartSong } from "../../actions/saveData";
 // images
 import imgCover from "../../images/img_cover1.jpeg";
 // others
 import "./style.scss";
 
 const ZingChartSong = () => {
-  const disPatch = useDispatch();
+  const dispatch = useDispatch();
   const stateZingChartSong = useSelector(
     (state) => state.saveReducer.dataZingChartSong
   );
-  const action = dataZingChartSong(stateZingChartSong);
-  disPatch(action);
+  const action = saveZingChartSong(stateZingChartSong);
+  useEffect(() => {
+    dispatch(action);
+  });
   return (
     <div className="zing-chart-song-wrapper">
       <TitleComponent
