@@ -18,7 +18,7 @@ import "./style.scss";
 
 const { Content } = Layout;
 
-const ContentLayout = () => (
+const ContentLayOutHome = () => (
   <Content className="content-body-wrapper">
     <div className="content-body-wrapper-inner">
       <SongRating />
@@ -36,4 +36,5 @@ const ContentLayout = () => (
     </div>
   </Content>
 );
-export default ContentLayout;
+
+export default ContentLayOutHome;

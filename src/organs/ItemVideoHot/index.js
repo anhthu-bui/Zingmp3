@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 // components
 import ImageComponent from "../../components/ImageComponent";
 import InformationComponent from "../../components/InformationComponent";
-// others
 import "./style.scss";
 
 const ItemVideo = ({ name, singer, img }) => (

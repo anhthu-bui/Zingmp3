@@ -20,6 +20,17 @@
                 display: none;
             }
         }
+        .information-singer {
+            font-size: 12px;
+            a{
+                text-overflow: ellipsis;
+                word-break: break-word;
+                color: #fff;
+                &:hover{
+                    color: purple;
+                }
+            }
+        }
         .information-wrapper{
             position: absolute;
             bottom: 2px;
@@ -37,17 +48,6 @@
                     font-family: "Roboto","segoe ui",Helvetica,Arial,sans-serif;
                     font-weight: 400;
                     font-size: 14px;
-                    &:hover{
-                        color: purple;
-                    }
-                }
-            }
-            .information-singer {
-                font-size: 12px;
-                a{
-                    text-overflow: ellipsis;
-                    word-break: break-word;
-                    color: #fff;
                     &:hover{
                         color: purple;
                     }
