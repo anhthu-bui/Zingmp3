@@ -16,10 +16,6 @@ import "./style.scss";
 const AlbumHot = () => {
   const dispatch = useDispatch();
   const stateAlbumHot = useSelector((state) => state.saveReducer.dataAlbumHot);
-  const action = saveAlbumHot(stateAlbumHot);
-  useEffect(() => {
-    dispatch(action);
-  }, []);
   // Pagination
   const [hoverRef, isHovered] = useHover();
   const { start, end, pagination, handlePageChange } = usePaginationKey({
@@ -28,6 +24,9 @@ const AlbumHot = () => {
     total: stateAlbumHot.length,
     isHover: isHovered,
   });
+  useEffect(() => {
+    dispatch(saveAlbumHot(stateAlbumHot));
+  }, []);
   return (
     <div className="album-hot-wrapper" ref={hoverRef}>
       <TitleComponent titleName="Album Hot" fontSize="26px" />

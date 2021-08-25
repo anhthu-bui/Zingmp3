@@ -18,9 +18,8 @@ const ZingChartSong = () => {
   const stateZingChartSong = useSelector(
     (state) => state.saveReducer.dataZingChartSong
   );
-  const action = saveZingChartSong(stateZingChartSong);
   useEffect(() => {
-    dispatch(action);
+    dispatch(saveZingChartSong(stateZingChartSong));
   }, []);
   return (
     <div className="zing-chart-song-wrapper">

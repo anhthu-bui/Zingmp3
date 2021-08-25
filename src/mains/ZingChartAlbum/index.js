@@ -18,9 +18,8 @@ const ZingChartAlbum = () => {
   const stateZingChartAlbum = useSelector(
     (state) => state.saveReducer.dataZingChartAlbum
   );
-  const action = saveZingChartAlbum(stateZingChartAlbum);
   useEffect(() => {
-    dispatch(action);
+    dispatch(saveZingChartAlbum(stateZingChartAlbum));
   }, []);
   return (
     <div className="zing-chart-album-wrapper">

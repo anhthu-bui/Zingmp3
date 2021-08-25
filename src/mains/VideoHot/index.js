@@ -12,9 +12,8 @@ import "./style.scss";
 const VideoHot = () => {
   const dispatch = useDispatch();
   const stateVideoHot = useSelector((state) => state.saveReducer.dataVideoHot);
-  const action = saveVideoHot(stateVideoHot);
   useEffect(() => {
-    dispatch(action);
+    dispatch(saveVideoHot(stateVideoHot));
   }, []);
   return (
     <div className="video-hot-wrapper">

@@ -14,9 +14,8 @@ import "./style.scss";
 const ItemHotSinger = () => {
   const dispatch = useDispatch();
   const stateSinger = useSelector((state) => state.saveReducer.dataSinger);
-  const action = saveSinger(stateSinger);
   useEffect(() => {
-    dispatch(action);
+    dispatch(saveSinger(stateSinger));
   }, []);
   return (
     <div className="hot-singer-wrapper">

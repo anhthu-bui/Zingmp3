@@ -16,10 +16,6 @@ import "./style.scss";
 const PlaylistHot = () => {
   const statePlaylist = useSelector((state) => state.saveReducer.dataPlaylist);
   const dispatch = useDispatch();
-  const action = savePlaylist(statePlaylist);
-  useEffect(() => {
-    dispatch(action);
-  }, []);
   // Pagination
   const [hoverRef, isHovered] = useHover();
   const { start, end, pagination, handlePageChange } = usePaginationKey({
@@ -28,6 +24,9 @@ const PlaylistHot = () => {
     total: statePlaylist.length,
     isHover: isHovered,
   });
+  useEffect(() => {
+    dispatch(savePlaylist(statePlaylist));
+  }, []);
   return (
     <div className="playlist-wrapper" ref={hoverRef}>
       <TitleComponent titleName="Khám phá âm nhạc Genz" fontSize="26px" />

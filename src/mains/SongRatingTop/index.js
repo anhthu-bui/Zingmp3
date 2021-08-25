@@ -14,9 +14,8 @@ const SongRakingList = () => {
   const stateSongRatingTop = useSelector(
     (state) => state.saveReducer.dataSongRatingTop
   );
-  const action = saveSongRatingTop(stateSongRatingTop);
   useEffect(() => {
-    dispatch(action);
+    dispatch(saveSongRatingTop(stateSongRatingTop));
   }, []);
   return (
     <div

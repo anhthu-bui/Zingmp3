@@ -15,9 +15,8 @@ import "./style.scss";
 const ZingChartNew = () => {
   const dispatch = useDispatch();
   const stateNews = useSelector((state) => state.saveReducer.dataNews);
-  const action = saveNews(stateNews);
   useEffect(() => {
-    dispatch(action);
+    dispatch(saveNews(stateNews));
   }, []);
   return (
     <div className="zing-chart-news-wrapper">

@@ -12,9 +12,8 @@ import { saveVpop } from "../../actions/saveData";
 const ZingChartVPop = () => {
   const dispatch = useDispatch();
   const stateVPop = useSelector((state) => state.saveReducer.dataVpop);
-  const action = saveVpop(stateVPop);
   useEffect(() => {
-    dispatch(action);
+    dispatch(saveVpop(stateVPop));
   }, []);
   return (
     <div className="zing-chart-vpop-wrapper">

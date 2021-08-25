@@ -18,9 +18,8 @@ const ZingChartMV = () => {
   const stateZingChartMV = useSelector(
     (state) => state.saveReducer.dataZingChartMV
   );
-  const action = saveZingChartMV(stateZingChartMV);
   useEffect(() => {
-    dispatch(action);
+    dispatch(saveZingChartMV(stateZingChartMV));
   }, []);
   return (
     <div className="zing-chart-mv-wrapper">
