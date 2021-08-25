@@ -21,7 +21,7 @@ const ZingChartMV = () => {
   const action = saveZingChartMV(stateZingChartMV);
   useEffect(() => {
     dispatch(action);
-  });
+  }, []);
   return (
     <div className="zing-chart-mv-wrapper">
       <TitleComponent

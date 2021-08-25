@@ -16,7 +16,7 @@ const SongRakingList = () => {
   const action = saveSongRating(stateSongRating);
   useEffect(() => {
     dispatch(action);
-  });
+  }, []);
   return (
     <div className="song-raking-list-wrapper">
       <ul className="song-raking-list">

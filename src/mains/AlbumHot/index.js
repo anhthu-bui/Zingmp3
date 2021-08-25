@@ -19,7 +19,7 @@ const AlbumHot = () => {
   const action = saveAlbumHot(stateAlbumHot);
   useEffect(() => {
     dispatch(action);
-  });
+  }, []);
   // Pagination
   const [hoverRef, isHovered] = useHover();
   const { start, end, pagination, handlePageChange } = usePaginationKey({

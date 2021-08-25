@@ -17,7 +17,7 @@ const ItemHotSinger = () => {
   const action = saveSinger(stateSinger);
   useEffect(() => {
     dispatch(action);
-  });
+  }, []);
   return (
     <div className="hot-singer-wrapper">
       <div className="hot-singer-wrapper-inner">

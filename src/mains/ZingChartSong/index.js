@@ -21,7 +21,7 @@ const ZingChartSong = () => {
   const action = saveZingChartSong(stateZingChartSong);
   useEffect(() => {
     dispatch(action);
-  });
+  }, []);
   return (
     <div className="zing-chart-song-wrapper">
       <TitleComponent

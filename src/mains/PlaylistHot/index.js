@@ -19,7 +19,7 @@ const PlaylistHot = () => {
   const action = savePlaylist(statePlaylist);
   useEffect(() => {
     dispatch(action);
-  });
+  }, []);
   // Pagination
   const [hoverRef, isHovered] = useHover();
   const { start, end, pagination, handlePageChange } = usePaginationKey({

@@ -18,7 +18,7 @@ const ZingChartNew = () => {
   const action = saveNews(stateNews);
   useEffect(() => {
     dispatch(action);
-  });
+  }, []);
   return (
     <div className="zing-chart-news-wrapper">
       <TitleComponent titleName="Tin tức âm nhạc" fontSize="18px" />

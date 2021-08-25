@@ -21,7 +21,7 @@ const ZingChartAlbum = () => {
   const action = saveZingChartAlbum(stateZingChartAlbum);
   useEffect(() => {
     dispatch(action);
-  });
+  }, []);
   return (
     <div className="zing-chart-album-wrapper">
       <TitleComponent titleName="#ZingChart Tuần - Album" fontSize="18px" />

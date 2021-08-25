@@ -15,7 +15,7 @@ const ZingChartVPop = () => {
   const action = saveVpop(stateVPop);
   useEffect(() => {
     dispatch(action);
-  });
+  }, []);
   return (
     <div className="zing-chart-vpop-wrapper">
       <div className="vpop">

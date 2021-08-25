@@ -15,7 +15,7 @@ const VideoHot = () => {
   const action = saveVideoHot(stateVideoHot);
   useEffect(() => {
     dispatch(action);
-  });
+  }, []);
   return (
     <div className="video-hot-wrapper">
       <TitleComponent titleName="Video Hot" fontSize="26px" />
