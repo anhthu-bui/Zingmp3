@@ -6,7 +6,7 @@ const vi = {
   video: "Video",
   album: "Album",
   nghesi: "Nghệ Sĩ",
-  VIP: "VIP",
+  vip: "VIP",
   tatquangcao: "Turn off ads",
   vi: "Tiếng Việt",
   en: "English",
