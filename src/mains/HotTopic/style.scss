@@ -1,8 +1,81 @@
 .hot-topic-wrapper {
-    grid-column: 2 / 3;
-    grid-row: 1 / 4;
-    background-color: green;
-    text-align: center;
-    font-size: 20px;
-    color: white;
+  grid-column: 2 / 3;
+  grid-row: 1 / 4;
+
+  &-inner {
+    .hot-topic-top {
+      .img-background {
+        display: relative;
+        opacity: 0.9 !important;
+        z-index: 10;
+        background-color: #000;
+      }
+
+      .music-for-you {
+        display: relative;
+        position: absolute;
+        top: 120px;
+        margin-left: 40px;
+        width: 90px;
+        height: 90px;
+
+        .play-all {
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 40px;
+          color: white;
+        }
+
+        a:hover {
+          opacity: 0.8;
+        }
+      }
+
+      .description {
+        position: absolute;
+        top: 120px;
+        margin-left: 10%;
+        width: 150px;
+        text-align: left;
+
+        a {
+          color: white;
+        }
+
+        .title {
+          font-weight: 700;
+          font-size: 14px;
+        }
+
+        .detail {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .title-wrapper {
+      margin: 20px 0 20px 0;
+
+      a {
+        font-size: 18px !important;
+        font-weight: 300;
+      }
+    }
+
+    .hot-topic-link {
+      margin-top: 20px;
+      margin-right: 50%;
+
+      a {
+        color: #707070;
+
+        &:hover {
+          color: purple;
+        }
+      }
+    }
+  }
 }
