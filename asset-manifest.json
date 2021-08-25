@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Zingmp3/static/css/main.8a16a78c.chunk.css",
-    "main.js": "/Zingmp3/static/js/main.f57d4c6d.chunk.js",
-    "main.js.map": "/Zingmp3/static/js/main.f57d4c6d.chunk.js.map",
+    "main.css": "/Zingmp3/static/css/main.bc1adaae.chunk.css",
+    "main.js": "/Zingmp3/static/js/main.04d9e78e.chunk.js",
+    "main.js.map": "/Zingmp3/static/js/main.04d9e78e.chunk.js.map",
     "runtime-main.js": "/Zingmp3/static/js/runtime-main.1eca044f.js",
     "runtime-main.js.map": "/Zingmp3/static/js/runtime-main.1eca044f.js.map",
-    "static/css/2.630ef54a.chunk.css": "/Zingmp3/static/css/2.630ef54a.chunk.css",
-    "static/js/2.4b129b8d.chunk.js": "/Zingmp3/static/js/2.4b129b8d.chunk.js",
-    "static/js/2.4b129b8d.chunk.js.map": "/Zingmp3/static/js/2.4b129b8d.chunk.js.map",
+    "static/css/2.786ae0dd.chunk.css": "/Zingmp3/static/css/2.786ae0dd.chunk.css",
+    "static/js/2.3f9db719.chunk.js": "/Zingmp3/static/js/2.3f9db719.chunk.js",
+    "static/js/2.3f9db719.chunk.js.map": "/Zingmp3/static/js/2.3f9db719.chunk.js.map",
     "static/js/3.ffbad573.chunk.js": "/Zingmp3/static/js/3.ffbad573.chunk.js",
     "static/js/3.ffbad573.chunk.js.map": "/Zingmp3/static/js/3.ffbad573.chunk.js.map",
     "index.html": "/Zingmp3/index.html",
-    "static/css/2.630ef54a.chunk.css.map": "/Zingmp3/static/css/2.630ef54a.chunk.css.map",
-    "static/css/main.8a16a78c.chunk.css.map": "/Zingmp3/static/css/main.8a16a78c.chunk.css.map",
-    "static/js/2.4b129b8d.chunk.js.LICENSE.txt": "/Zingmp3/static/js/2.4b129b8d.chunk.js.LICENSE.txt",
+    "static/css/2.786ae0dd.chunk.css.map": "/Zingmp3/static/css/2.786ae0dd.chunk.css.map",
+    "static/css/main.bc1adaae.chunk.css.map": "/Zingmp3/static/css/main.bc1adaae.chunk.css.map",
+    "static/js/2.3f9db719.chunk.js.LICENSE.txt": "/Zingmp3/static/js/2.3f9db719.chunk.js.LICENSE.txt",
     "static/media/albumhot_1.5e65e0b5.jpeg": "/Zingmp3/static/media/albumhot_1.5e65e0b5.jpeg",
     "static/media/albumhot_10.897cdfc1.jpeg": "/Zingmp3/static/media/albumhot_10.897cdfc1.jpeg",
     "static/media/albumhot_11.99351e93.jpeg": "/Zingmp3/static/media/albumhot_11.99351e93.jpeg",
@@ -36,6 +36,8 @@
     "static/media/albumhot_8.bb0b7988.jpeg": "/Zingmp3/static/media/albumhot_8.bb0b7988.jpeg",
     "static/media/albumhot_9.faa92d13.jpeg": "/Zingmp3/static/media/albumhot_9.faa92d13.jpeg",
     "static/media/ben-thanh_partner.53bb8dbd.jpeg": "/Zingmp3/static/media/ben-thanh_partner.53bb8dbd.jpeg",
+    "static/media/hot-topic1.cb097ea7.jpeg": "/Zingmp3/static/media/hot-topic1.cb097ea7.jpeg",
+    "static/media/hot-topic2.6067804b.jpeg": "/Zingmp3/static/media/hot-topic2.6067804b.jpeg",
     "static/media/icon_zingmp3.894e61cf.png": "/Zingmp3/static/media/icon_zingmp3.894e61cf.png",
     "static/media/img_album1.e4545991.jpeg": "/Zingmp3/static/media/img_album1.e4545991.jpeg",
     "static/media/img_cover1.4b14e45d.jpeg": "/Zingmp3/static/media/img_cover1.4b14e45d.jpeg",
@@ -105,9 +107,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.1eca044f.js",
-    "static/css/2.630ef54a.chunk.css",
-    "static/js/2.4b129b8d.chunk.js",
-    "static/css/main.8a16a78c.chunk.css",
-    "static/js/main.f57d4c6d.chunk.js"
+    "static/css/2.786ae0dd.chunk.css",
+    "static/js/2.3f9db719.chunk.js",
+    "static/css/main.bc1adaae.chunk.css",
+    "static/js/main.04d9e78e.chunk.js"
   ]
 }
