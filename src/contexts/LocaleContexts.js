@@ -1,13 +1,15 @@
 // libs
-import { useState, createContext, useContext } from "react";
+import { createContext, useContext } from "react";
 import PropTypes from "prop-types";
+// hooks
+import useLocalStorage from "../hooks/useLocalStorage";
 // locales
 import { locales } from "../locales";
 
 const LocaleContext = createContext();
 
 export const ProvideLocale = ({ children }) => {
-  const [locale, setLocale] = useState("vi");
+  const [locale, setLocale] = useLocalStorage("locale", "vi");
   return (
     <LocaleContext.Provider
       value={{
