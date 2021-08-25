@@ -8,7 +8,7 @@ import "./style.scss";
 
 const ItemAlbum = ({ name, singer, img }) => (
   <div className="item-album-wrapper">
-    <ImageComponent image={img} width="150px" cover="true" />
+    <ImageComponent image={img} width="140px" height="155px" cover="true" />
     <InformationComponent name={name} singer={singer} fontSize="14px" />
   </div>
 );

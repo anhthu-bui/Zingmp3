@@ -11,6 +11,18 @@
     a:hover {
         color: purple;
     }
+    .information-singer {
+        font-size: 12px;
+        line-height: normal;
+        a{
+            text-overflow: ellipsis;
+            word-break: break-word;
+            color: #888;
+            &:hover{
+                color: purple;
+            }
+        }
+    }
     .information-name {
         margin-bottom: 0px;
         line-height: normal;
@@ -36,18 +48,6 @@
                 &:hover{
                     color: purple;
                 }
-            }
-        }
-    }
-    .information-singer {
-        font-size: 12px;
-        line-height: normal;
-        a{
-            text-overflow: ellipsis;
-            word-break: break-word;
-            color: #888;
-            &:hover{
-                color: purple;
             }
         }
     }

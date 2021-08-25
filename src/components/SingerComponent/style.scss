@@ -2,6 +2,9 @@
     &-inner{
         position: relative;
         display: block;
+        .name {
+            display:none;
+        }
         &:hover{
             opacity: 0.85;
             .name {
@@ -17,9 +20,6 @@
                 font-weight: 400;
                 color: white;
             }   
-        }
-        .name {
-            display:none;
         }
     }
 }
