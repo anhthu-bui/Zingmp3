@@ -1,5 +1,5 @@
 // libs
-import { RightOutlined } from "@ant-design/icons";
+import { RightOutlined, PlayCircleOutlined } from "@ant-design/icons";
 // images
 import topicBackground from "../../images/topic-background.png";
 import topicTop from "../../images/hot-topic2.jpeg";
@@ -10,16 +10,24 @@ import "./style.scss";
 const HotTopic = () => (
   <div className="hot-topic-wrapper">
     <div className="hot-topic-wrapper-inner">
-      <div
-        className="hot-topic-top"
-        style={{ backgroundImage: `url(${topicBackground}) no-repeat center` }}
-      >
+      <div className="hot-topic-top">
+        <img
+          className="img-background"
+          src={topicBackground}
+          width="100%"
+          height="126px"
+        />
         <div className="music-for-you">
-          <img src={topicTop} width="90px" height="90px" />
+          <a href="/">
+            <img src={topicTop} width="90px" height="90px" />
+            <span className="play-all">
+              <PlayCircleOutlined />
+            </span>
+          </a>
         </div>
         <div className="description">
           <h3 className="title">
-            <a href="/">Dành riêng cho bạn</a>
+            <a href="/">Dành Riêng Cho Bạn</a>
           </h3>
           <div className="detail">
             <a href="/">
@@ -37,7 +45,7 @@ const HotTopic = () => (
         </h3>
       </div>
       <div className="hot-topic-bottom">
-        <img src={topicBottom} width="300px" height="90px" />
+        <img src={topicBottom} width="100%" height="90px" />
       </div>
       <div className="hot-topic-link">
         <a href="/">

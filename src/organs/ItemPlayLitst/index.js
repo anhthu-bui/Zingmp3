@@ -1,14 +1,18 @@
+// libs
+import PropTypes from "prop-types";
 // components
 import ImageComponent from "../../components/ImageComponent";
 import InformationComponent from "../../components/InformationComponent";
-// others
 import "./style.scss";
-import imgPlayList from "../../images/img_album1.jpeg";
 
-const ItemPlayList = () => (
+const ItemPlayList = ({ name, img }) => (
   <div className="item-playlist-wrapper">
-    <ImageComponent image={imgPlayList} width="150px" cover="true" />
-    <InformationComponent name="Gen Z nghe gì ?" fontSize="14px" />
+    <ImageComponent image={img} width="140px" height="155px" cover="true" />
+    <InformationComponent name={name} fontSize="14px" />
   </div>
 );
+ItemPlayList.propTypes = {
+  img: PropTypes.string,
+  name: PropTypes.string,
+};
 export default ItemPlayList;
