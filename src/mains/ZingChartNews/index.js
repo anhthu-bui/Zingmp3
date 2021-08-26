@@ -9,6 +9,8 @@ import ImageCoverComponent from "../../components/ImageCoverComponent";
 import { saveNews } from "../../actions/saveData";
 // images
 import zingchartCover from "../../images/new_cover.jpeg";
+// mocks
+import dataNews from "../../mocks/News";
 // others
 import "./style.scss";
 
@@ -16,7 +18,7 @@ const ZingChartNew = () => {
   const dispatch = useDispatch();
   const stateNews = useSelector((state) => state.saveReducer.dataNews);
   useEffect(() => {
-    dispatch(saveNews(stateNews));
+    dispatch(saveNews(dataNews));
   }, []);
   return (
     <div className="zing-chart-news-wrapper">

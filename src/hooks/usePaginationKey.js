@@ -1,5 +1,5 @@
 // libs
-import { useState } from "react";
+import { useState, useEffect } from "react";
 // hooks
 import useEventListener from "./useEventListener";
 
@@ -17,6 +17,9 @@ const usePaginationKey = ({ page, limit, total, isHover }) => {
     arrowUp: 38,
     arrowDown: 40,
   };
+  useEffect(() => {
+    setPagination({ ...pagination, total });
+  }, [total]);
   const handleKeyChange = (e) => {
     switch (e.keyCode) {
       case keyCode.arrowDown: {

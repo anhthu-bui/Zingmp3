@@ -6,6 +6,8 @@ import TitleComponent from "../../components/TitleComponent";
 import ItemVideo from "../../organs/ItemVideoHot";
 // actions
 import { saveVideoHot } from "../../actions/saveData";
+// mocks
+import videoHot from "../../mocks/VideoHot";
 // others
 import "./style.scss";
 
@@ -13,7 +15,7 @@ const VideoHot = () => {
   const dispatch = useDispatch();
   const stateVideoHot = useSelector((state) => state.saveReducer.dataVideoHot);
   useEffect(() => {
-    dispatch(saveVideoHot(stateVideoHot));
+    dispatch(saveVideoHot(videoHot));
   }, []);
   return (
     <div className="video-hot-wrapper">

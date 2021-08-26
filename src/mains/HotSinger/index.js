@@ -6,6 +6,8 @@ import SingerComponent from "../../components/SingerComponent";
 import TitleComponent from "../../components/TitleComponent";
 // actions
 import { saveSinger } from "../../actions/saveData";
+// mocks
+import dataHotSinger from "../../mocks/Singer";
 // images
 import singerCover from "../../images/singer_cover.jpeg";
 // others
@@ -15,7 +17,7 @@ const ItemHotSinger = () => {
   const dispatch = useDispatch();
   const stateSinger = useSelector((state) => state.saveReducer.dataSinger);
   useEffect(() => {
-    dispatch(saveSinger(stateSinger));
+    dispatch(saveSinger(dataHotSinger));
   }, []);
   return (
     <div className="hot-singer-wrapper">

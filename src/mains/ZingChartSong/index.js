@@ -10,6 +10,8 @@ import ImageCoverComponent from "../../components/ImageCoverComponent";
 import { saveZingChartSong } from "../../actions/saveData";
 // images
 import imgCover from "../../images/img_cover1.jpeg";
+// mocks
+import dataSong from "../../mocks/ZingChartSong";
 // others
 import "./style.scss";
 
@@ -19,7 +21,7 @@ const ZingChartSong = () => {
     (state) => state.saveReducer.dataZingChartSong
   );
   useEffect(() => {
-    dispatch(saveZingChartSong(stateZingChartSong));
+    dispatch(saveZingChartSong(dataSong));
   }, []);
   return (
     <div className="zing-chart-song-wrapper">

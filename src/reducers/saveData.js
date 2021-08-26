@@ -1,15 +1,3 @@
-// mocks
-import AlbumHot from "../mocks/AlbumHot";
-import VPop from "../mocks/VPop";
-import news from "../mocks/News";
-import playList from "../mocks/PlayList";
-import singer from "../mocks/Singer";
-import songRating from "../mocks/SongRating";
-import songRatingTop from "../mocks/SongRatingTop";
-import videoHot from "../mocks/VideoHot";
-import zingChartAlbum from "../mocks/ZingChart_Album";
-import zingChartMV from "../mocks/ZingChart_MV";
-import zingChartSong from "../mocks/ZingChartSong";
 // constants
 import actionType from "../constants/actionType";
 
@@ -32,67 +20,67 @@ const saveData = (state = initialState, action) => {
     case actionType.SAVE_ALBUM_HOT: {
       return {
         ...state,
-        dataAlbumHot: AlbumHot,
+        dataAlbumHot: action.payload,
       };
     }
     case actionType.SAVE_VPOP: {
       return {
         ...state,
-        dataVpop: VPop,
+        dataVpop: action.payload,
       };
     }
     case actionType.SAVE_NEWS: {
       return {
         ...state,
-        dataNews: news,
+        dataNews: action.payload,
       };
     }
     case actionType.SAVE_PLAYLIST: {
       return {
         ...state,
-        dataPlaylist: playList,
+        dataPlaylist: action.payload,
       };
     }
     case actionType.SAVE_SINGER: {
       return {
         ...state,
-        dataSinger: singer,
+        dataSinger: action.payload,
       };
     }
     case actionType.SAVE_SONG_RATING: {
       return {
         ...state,
-        dataSongRating: songRating,
+        dataSongRating: action.payload,
       };
     }
     case actionType.SAVE_SONG_RATING_TOP: {
       return {
         ...state,
-        dataSongRatingTop: songRatingTop,
+        dataSongRatingTop: action.payload,
       };
     }
     case actionType.SAVE_VIDEO_HOT: {
       return {
         ...state,
-        dataVideoHot: videoHot,
+        dataVideoHot: action.payload,
       };
     }
     case actionType.SAVE_ZINGCHART_ALBUM: {
       return {
         ...state,
-        dataZingChartAlbum: zingChartAlbum,
+        dataZingChartAlbum: action.payload,
       };
     }
     case actionType.SAVE_ZINGCHART_MV: {
       return {
         ...state,
-        dataZingChartMV: zingChartMV,
+        dataZingChartMV: action.payload,
       };
     }
     case actionType.SAVE_ZINGCHART_SONG: {
       return {
         ...state,
-        dataZingChartSong: zingChartSong,
+        dataZingChartSong: action.payload,
       };
     }
     default:

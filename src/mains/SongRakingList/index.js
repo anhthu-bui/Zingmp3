@@ -5,6 +5,8 @@ import { useSelector, useDispatch } from "react-redux";
 import ItemSongRaking from "../../organs/ItemSongRaking";
 // actions
 import { saveSongRating } from "../../actions/saveData";
+// mocks
+import songRating from "../../mocks/SongRating";
 // others
 import "./style.scss";
 
@@ -14,7 +16,7 @@ const SongRakingList = () => {
     (state) => state.saveReducer.dataSongRating
   );
   useEffect(() => {
-    dispatch(saveSongRating(stateSongRating));
+    dispatch(saveSongRating(songRating));
   }, []);
   return (
     <div className="song-raking-list-wrapper">

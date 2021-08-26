@@ -6,6 +6,8 @@ import TitleComponent from "../../components/TitleComponent";
 import ItemDetail from "../../organs/ItemDetailVPop";
 // others
 import "./style.scss";
+// mocks
+import dataVpop from "../../mocks/VPop";
 // dataSources
 import { saveVpop } from "../../actions/saveData";
 
@@ -13,7 +15,7 @@ const ZingChartVPop = () => {
   const dispatch = useDispatch();
   const stateVPop = useSelector((state) => state.saveReducer.dataVpop);
   useEffect(() => {
-    dispatch(saveVpop(stateVPop));
+    dispatch(saveVpop(dataVpop));
   }, []);
   return (
     <div className="zing-chart-vpop-wrapper">

@@ -10,6 +10,8 @@ import ImageCoverComponent from "../../components/ImageCoverComponent";
 import { saveZingChartAlbum } from "../../actions/saveData";
 // images
 import zingchartAlbumCover from "../../images/zingchart_album_cover.jpeg";
+// mocks
+import dataAlbum from "../../mocks/ZingChart_Album";
 // others
 import "./style.scss";
 
@@ -19,7 +21,7 @@ const ZingChartAlbum = () => {
     (state) => state.saveReducer.dataZingChartAlbum
   );
   useEffect(() => {
-    dispatch(saveZingChartAlbum(stateZingChartAlbum));
+    dispatch(saveZingChartAlbum(dataAlbum));
   }, []);
   return (
     <div className="zing-chart-album-wrapper">
