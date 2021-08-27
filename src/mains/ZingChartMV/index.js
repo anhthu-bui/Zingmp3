@@ -10,6 +10,8 @@ import ImageCoverComponent from "../../components/ImageCoverComponent";
 import { saveZingChartMV } from "../../actions/saveData";
 // images
 import zingchartCover from "../../images/zingchart_mv_cover.jpeg";
+// mocks
+import dataMV from "../../mocks/ZingChart_MV";
 // others
 import "./style.scss";
 
@@ -19,7 +21,7 @@ const ZingChartMV = () => {
     (state) => state.saveReducer.dataZingChartMV
   );
   useEffect(() => {
-    dispatch(saveZingChartMV(stateZingChartMV));
+    dispatch(saveZingChartMV(dataMV));
   }, []);
   return (
     <div className="zing-chart-mv-wrapper">

@@ -10,6 +10,8 @@ import useHover from "../../hooks/useHover";
 import usePaginationKey from "../../hooks/usePaginationKey";
 // actions
 import { saveAlbumHot } from "../../actions/saveData";
+// mocks
+import albumHot from "../../mocks/AlbumHot";
 // others
 import "./style.scss";
 
@@ -25,7 +27,7 @@ const AlbumHot = () => {
     isHover: isHovered,
   });
   useEffect(() => {
-    dispatch(saveAlbumHot(stateAlbumHot));
+    dispatch(saveAlbumHot(albumHot));
   }, []);
   return (
     <div className="album-hot-wrapper" ref={hoverRef}>

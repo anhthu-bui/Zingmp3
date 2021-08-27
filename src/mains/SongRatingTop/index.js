@@ -5,9 +5,12 @@ import { useSelector, useDispatch } from "react-redux";
 import ItemSongRakingTop from "../../organs/ItemSongRakingTop";
 // actions
 import { saveSongRatingTop } from "../../actions/saveData";
+// images
+import songrakingImage from "../../images/song_ranking.png";
+// mocks
+import songRatingTop from "../../mocks/SongRatingTop";
 // others
 import "./style.scss";
-import songrakingImage from "../../images/song_ranking.png";
 
 const SongRakingList = () => {
   const dispatch = useDispatch();
@@ -15,7 +18,7 @@ const SongRakingList = () => {
     (state) => state.saveReducer.dataSongRatingTop
   );
   useEffect(() => {
-    dispatch(saveSongRatingTop(stateSongRatingTop));
+    dispatch(saveSongRatingTop(songRatingTop));
   }, []);
   return (
     <div

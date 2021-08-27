@@ -10,6 +10,8 @@ import { savePlaylist } from "../../actions/saveData";
 // hooks
 import useHover from "../../hooks/useHover";
 import usePaginationKey from "../../hooks/usePaginationKey";
+// mocks
+import playListHot from "../../mocks/PlayList";
 // others
 import "./style.scss";
 
@@ -25,7 +27,7 @@ const PlaylistHot = () => {
     isHover: isHovered,
   });
   useEffect(() => {
-    dispatch(savePlaylist(statePlaylist));
+    dispatch(savePlaylist(playListHot));
   }, []);
   return (
     <div className="playlist-wrapper" ref={hoverRef}>
