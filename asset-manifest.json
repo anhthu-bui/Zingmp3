@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Zingmp3/static/css/main.bc1adaae.chunk.css",
-    "main.js": "/Zingmp3/static/js/main.04d9e78e.chunk.js",
-    "main.js.map": "/Zingmp3/static/js/main.04d9e78e.chunk.js.map",
-    "runtime-main.js": "/Zingmp3/static/js/runtime-main.1eca044f.js",
-    "runtime-main.js.map": "/Zingmp3/static/js/runtime-main.1eca044f.js.map",
+    "main.css": "/Zingmp3/static/css/main.95b104ee.chunk.css",
+    "main.js": "/Zingmp3/static/js/main.2bfff048.chunk.js",
+    "main.js.map": "/Zingmp3/static/js/main.2bfff048.chunk.js.map",
+    "runtime-main.js": "/Zingmp3/static/js/runtime-main.4af84b2c.js",
+    "runtime-main.js.map": "/Zingmp3/static/js/runtime-main.4af84b2c.js.map",
     "static/css/2.786ae0dd.chunk.css": "/Zingmp3/static/css/2.786ae0dd.chunk.css",
-    "static/js/2.3f9db719.chunk.js": "/Zingmp3/static/js/2.3f9db719.chunk.js",
-    "static/js/2.3f9db719.chunk.js.map": "/Zingmp3/static/js/2.3f9db719.chunk.js.map",
-    "static/js/3.ffbad573.chunk.js": "/Zingmp3/static/js/3.ffbad573.chunk.js",
-    "static/js/3.ffbad573.chunk.js.map": "/Zingmp3/static/js/3.ffbad573.chunk.js.map",
+    "static/js/2.95719382.chunk.js": "/Zingmp3/static/js/2.95719382.chunk.js",
+    "static/js/2.95719382.chunk.js.map": "/Zingmp3/static/js/2.95719382.chunk.js.map",
+    "static/js/3.d1143a5b.chunk.js": "/Zingmp3/static/js/3.d1143a5b.chunk.js",
+    "static/js/3.d1143a5b.chunk.js.map": "/Zingmp3/static/js/3.d1143a5b.chunk.js.map",
     "index.html": "/Zingmp3/index.html",
     "static/css/2.786ae0dd.chunk.css.map": "/Zingmp3/static/css/2.786ae0dd.chunk.css.map",
-    "static/css/main.bc1adaae.chunk.css.map": "/Zingmp3/static/css/main.bc1adaae.chunk.css.map",
-    "static/js/2.3f9db719.chunk.js.LICENSE.txt": "/Zingmp3/static/js/2.3f9db719.chunk.js.LICENSE.txt",
+    "static/css/main.95b104ee.chunk.css.map": "/Zingmp3/static/css/main.95b104ee.chunk.css.map",
+    "static/js/2.95719382.chunk.js.LICENSE.txt": "/Zingmp3/static/js/2.95719382.chunk.js.LICENSE.txt",
     "static/media/albumhot_1.5e65e0b5.jpeg": "/Zingmp3/static/media/albumhot_1.5e65e0b5.jpeg",
     "static/media/albumhot_10.897cdfc1.jpeg": "/Zingmp3/static/media/albumhot_10.897cdfc1.jpeg",
     "static/media/albumhot_11.99351e93.jpeg": "/Zingmp3/static/media/albumhot_11.99351e93.jpeg",
@@ -106,10 +106,10 @@
     "static/media/zingchart_mv_cover.1f40db10.jpeg": "/Zingmp3/static/media/zingchart_mv_cover.1f40db10.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1eca044f.js",
+    "static/js/runtime-main.4af84b2c.js",
     "static/css/2.786ae0dd.chunk.css",
-    "static/js/2.3f9db719.chunk.js",
-    "static/css/main.bc1adaae.chunk.css",
-    "static/js/main.04d9e78e.chunk.js"
+    "static/js/2.95719382.chunk.js",
+    "static/css/main.95b104ee.chunk.css",
+    "static/js/main.2bfff048.chunk.js"
   ]
 }
