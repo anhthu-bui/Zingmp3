@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Zingmp3/static/css/main.95b104ee.chunk.css",
-    "main.js": "/Zingmp3/static/js/main.2bfff048.chunk.js",
-    "main.js.map": "/Zingmp3/static/js/main.2bfff048.chunk.js.map",
+    "main.js": "/Zingmp3/static/js/main.8aa5b4f1.chunk.js",
+    "main.js.map": "/Zingmp3/static/js/main.8aa5b4f1.chunk.js.map",
     "runtime-main.js": "/Zingmp3/static/js/runtime-main.4af84b2c.js",
     "runtime-main.js.map": "/Zingmp3/static/js/runtime-main.4af84b2c.js.map",
     "static/css/2.786ae0dd.chunk.css": "/Zingmp3/static/css/2.786ae0dd.chunk.css",
@@ -110,6 +110,6 @@
     "static/css/2.786ae0dd.chunk.css",
     "static/js/2.95719382.chunk.js",
     "static/css/main.95b104ee.chunk.css",
-    "static/js/main.2bfff048.chunk.js"
+    "static/js/main.8aa5b4f1.chunk.js"
   ]
 }
